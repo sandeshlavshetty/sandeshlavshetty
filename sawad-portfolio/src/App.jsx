@@ -5,6 +5,9 @@ import ExperienceSection from "./components/ExperienceSection";
 import Layout from "./components/Layout";
 import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
+import ThoughtsSection from "./components/ThoughtsSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />
+        <ThoughtsSection />
+        <ContactSection />
+        <Footer />
       </Layout>
       </div>
     </div>

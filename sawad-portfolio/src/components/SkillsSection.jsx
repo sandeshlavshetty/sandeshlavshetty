@@ -1,4 +1,4 @@
-import SkillMarquee from "./SkillMarquee";
+import VerticalSkills from "./VerticalSkills";
 
 export default function SkillsSection() {
   return (
@@ -8,21 +8,14 @@ export default function SkillsSection() {
         <span className="block text-white/20">LAYER</span>
       </h2>
 
-      <div className="mt-20 space-y-8">
-        <SkillMarquee
+      <div className="mt-20">
+        <VerticalSkills
           skills={[
             "React", "Next.js", "Node.js", "Express",
             "PostgreSQL", "MongoDB", "Redis",
-            "Docker", "AWS", "Nginx"
-          ]}
-        />
-
-        <SkillMarquee
-          reverse
-          skills={[
-            "Python", "FastAPI", "TensorFlow", "PyTorch",
-            "LangChain", "OpenAI API",
-            "Linux", "Git", "CI/CD"
+            "Docker", "AWS", "Linux",
+            "Python", "FastAPI", "TensorFlow",
+            "PyTorch", "LangChain", "Git", "CI/CD"
           ]}
         />
       </div>

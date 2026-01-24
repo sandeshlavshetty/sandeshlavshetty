@@ -1,14 +1,11 @@
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import HeroText from "./components/HeroText";
-import ServicesSection from "./components/ServicesSection";
-import ExperienceSection from "./components/ExperienceSection";
 import Layout from "./components/Layout";
-import SkillsSection from "./components/SkillsSection";
-import ProjectsSection from "./components/ProjectsSection";
-import ThoughtsSection from "./components/ThoughtsSection";
-import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
 import FloatingActions from "./components/FloatingActions";
+
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
+import SkillsPage from "./pages/SkillsPage";
 
 function App() {
   return (
@@ -17,16 +14,37 @@ function App() {
       <FloatingActions />
 
       <div className="pt-16">
-      <Layout>
-        <HeroText />
-        <ServicesSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <SkillsSection />
-        <ThoughtsSection />
-        <ContactSection />
-        <Footer />
-      </Layout>
+        <Routes>
+          {/* Home */}
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <HomePage />
+              </Layout>
+            }
+          />
+
+          {/* Projects */}
+          <Route
+            path="/projects"
+            element={
+              <Layout>
+                <ProjectsPage />
+              </Layout>
+            }
+          />
+
+          {/* Skills */}
+          <Route
+            path="/skills"
+            element={
+              <Layout>
+                <SkillsPage />
+              </Layout>
+            }
+          />
+        </Routes>
       </div>
     </div>
   );

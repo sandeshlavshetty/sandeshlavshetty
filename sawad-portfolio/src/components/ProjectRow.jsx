@@ -1,14 +1,14 @@
 import { ArrowUpRight } from "lucide-react";
 
-export default function ProjectRow({ title, subtitle, image }) {
+export default function ProjectRow({ title, subtitle, image, onClick }) {
   return (
-    <div className="group flex items-center justify-between">
-      
-      {/* Left */}
+    <div
+      onClick={onClick}
+      className="group flex items-center justify-between cursor-pointer"
+    >
       <div className="flex items-center gap-6">
         <img
           src={image}
-          alt={title}
           className="w-[72px] h-[72px] rounded-xl object-cover"
         />
 
@@ -22,17 +22,9 @@ export default function ProjectRow({ title, subtitle, image }) {
         </div>
       </div>
 
-      {/* Arrow */}
       <ArrowUpRight
         size={20}
-        className="
-          text-orange-400
-          opacity-0
-          translate-x-[-6px]
-          transition-all
-          group-hover:opacity-100
-          group-hover:translate-x-0
-        "
+        className="text-orange-400 opacity-0 group-hover:opacity-100 transition"
       />
     </div>
   );

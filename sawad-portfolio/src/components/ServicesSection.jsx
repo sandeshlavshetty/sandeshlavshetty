@@ -3,7 +3,7 @@ import { Layers, Cpu } from "lucide-react";
 
 export default function ServicesSection() {
   return (
-    <div className="mt-12 flex gap-8">
+    <div className="flex gap-8">
       <ServiceCard
         title={
           <>

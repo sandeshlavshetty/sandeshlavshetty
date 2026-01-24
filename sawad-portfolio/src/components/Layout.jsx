@@ -13,7 +13,7 @@ export default function Layout({ children }) {
         </div>
 
         {/* RIGHT — Scroll content */}
-        <div className="flex flex-col gap-24">
+        <div className="flex flex-col">
           {children}
         </div>
 

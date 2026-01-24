@@ -1,6 +1,6 @@
 export default function HeroText() {
   return (
-    <div className="flex flex-col justify-center max-w-2xl">
+    <div className="flex flex-col justify-center max-w-2xl mb-10">
       
       {/* Big Heading */}
       <h1 className="text-[72px] font-extrabold leading-none text-white">
@@ -21,6 +21,7 @@ export default function HeroText() {
         <Stat number="+3000" label="ACTIVE USERS" />
       </div>
 
+      
       
 
     </div>

@@ -2,7 +2,7 @@ import ExperienceCard from "./ExperienceCard";
 
 export default function ExperienceSection() {
   return (
-    <section>
+    <section className="mt-32">
       {/* Heading */}
       <h2 className="text-[64px] font-extrabold text-white leading-none">
         PROFESSIONAL

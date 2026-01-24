@@ -1,6 +1,9 @@
-export default function ThoughtCard({ title, desc, date, read }) {
+export default function ThoughtCard({ title, desc, date, read, link }) {
   return (
-    <div className="group cursor-pointer">
+    <div
+      onClick={() => window.open(link, "_blank")}
+      className="group cursor-pointer"
+    >
       <div className="flex justify-between items-start">
         <h3 className="text-xl font-semibold text-white max-w-xl group-hover:underline">
           {title}

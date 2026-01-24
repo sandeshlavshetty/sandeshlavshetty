@@ -8,11 +8,13 @@ import ProjectsSection from "./components/ProjectsSection";
 import ThoughtsSection from "./components/ThoughtsSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import FloatingActions from "./components/FloatingActions";
 
 function App() {
   return (
     <div className="min-h-screen bg-[#0b0b0b]">
       <Navbar />
+      <FloatingActions />
 
       <div className="pt-16">
       <Layout>

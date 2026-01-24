@@ -6,27 +6,33 @@ export default function ContactSection() {
         <span className="block text-white/20">TOGETHER</span>
       </h2>
 
-      <form className="mt-14 space-y-6 max-w-3xl">
+      <form
+        action="https://formspree.io/f/xvzkyggj"   // 🔁 replace with your Formspree ID
+        method="POST"
+        className="mt-14 space-y-6 max-w-3xl"
+      >
         <div className="grid grid-cols-2 gap-6">
-          <Input label="Name" placeholder="Your Name" />
-          <Input label="Email" placeholder="Your@email.com" />
-        </div>
+          <Input
+            label="Name"
+            name="name"
+            placeholder="Your Name"
+          />
 
-        <div>
-          <label className="text-sm text-gray-400">Budget</label>
-          <select className="mt-2 w-full bg-[#2a2a2a] text-gray-300 rounded-lg px-4 py-3 outline-none">
-            <option>Select...</option>
-            <option>$500 – $1k</option>
-            <option>$1k – $5k</option>
-            <option>$5k+</option>
-          </select>
+          <Input
+            label="Email"
+            name="email"
+            type="email"
+            placeholder="Your@email.com"
+          />
         </div>
 
         <div>
           <label className="text-sm text-gray-400">Message</label>
           <textarea
+            name="message"
             rows={5}
-            placeholder="Message"
+            required
+            placeholder="Tell me about your project, idea, or opportunity"
             className="mt-2 w-full bg-[#2a2a2a] text-gray-300 rounded-lg px-4 py-3 outline-none resize-none"
           />
         </div>
@@ -35,18 +41,21 @@ export default function ContactSection() {
           type="submit"
           className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 rounded-lg transition"
         >
-          Submit
+          Send Message
         </button>
       </form>
     </section>
   );
 }
 
-function Input({ label, placeholder }) {
+function Input({ label, name, type = "text", placeholder }) {
   return (
     <div>
       <label className="text-sm text-gray-400">{label}</label>
       <input
+        name={name}
+        type={type}
+        required
         placeholder={placeholder}
         className="mt-2 w-full bg-[#2a2a2a] text-gray-300 rounded-lg px-4 py-3 outline-none"
       />

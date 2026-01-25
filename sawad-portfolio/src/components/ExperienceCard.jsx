@@ -2,25 +2,18 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function ExperienceCard({ company, desc, date, onClick }) {
   return (
-    <div
+    <div 
       onClick={onClick}
-      className="
-        relative cursor-pointer
-        rounded-2xl p-8
-        border border-white/10
-        transition-all duration-300
-        hover:bg-white/[0.06]
-        hover:shadow-lg
-      "
+      className="p-10 rounded-[32px] bg-[#0f0f0f] border border-white/5 hover:bg-[#151515] transition-all cursor-pointer group"
     >
-      <ArrowUpRight
-        size={18}
-        className="absolute top-6 right-6 text-orange-400 opacity-70"
-      />
-
-      <h3 className="text-lg font-semibold text-white">{company}</h3>
-      <p className="mt-3 text-gray-400 max-w-2xl">{desc}</p>
-      <p className="mt-6 text-sm text-gray-500">{date}</p>
+      <div className="flex justify-between items-start">
+        <div className="max-w-xl">
+          <h3 className="text-[32px] font-bold text-white mb-4">{company}</h3>
+          <p className="text-gray-400 text-lg leading-relaxed mb-6">{desc}</p>
+          <p className="text-gray-600 font-medium uppercase tracking-widest text-sm">{date}</p>
+        </div>
+        <ArrowUpRight className="text-orange-500 group-hover:scale-125 transition-transform" size={24} />
+      </div>
     </div>
   );
 }

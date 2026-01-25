@@ -4,9 +4,10 @@ export default function ProjectsSection() {
   return (
     <section className="mt-32">
       {/* Heading */}
-      <h2 className="text-[64px] font-extrabold text-white leading-none">
+
+      <h2 className="text-[100px] font-black text-white leading-[0.85] tracking-tighter uppercase">
         RECENT
-        <span className="block text-white/20">PROJECTS</span>
+        <span className="block text-[#1a1a1a]">PROJECTS</span>
       </h2>
 
       {/* Projects */}

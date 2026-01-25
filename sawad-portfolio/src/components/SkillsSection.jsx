@@ -7,9 +7,9 @@ export default function SkillsSection() {
 
   return (
     <section className="mt-32">
-      <h2 className="text-[64px] font-extrabold text-white leading-none">
+      <h2 className="text-[100px] font-black text-white leading-[0.85] tracking-tighter uppercase">
         EXPERTISE
-        <span className="block text-white/20">LAYER</span>
+        <span className="block text-[#1a1a1a]">LAYER</span>
       </h2>
 
       {/* Skills preview */}

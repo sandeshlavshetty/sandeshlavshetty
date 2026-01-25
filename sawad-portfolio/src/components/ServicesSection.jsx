@@ -3,27 +3,31 @@ import { Layers, Cpu } from "lucide-react";
 
 export default function ServicesSection() {
   return (
-    <div className="flex gap-8">
+    <div className="flex gap-6 mt-20 w-full">
       <ServiceCard
         title={
           <>
-            BACKEND SYSTEMS <br />
-            & API ENGINEERING
+            Backend Systems <br />
+            & API Engineering
           </>
         }
-        bg="bg-orange-500"
-        icon={<Layers size={28} />}
+        bg="bg-[#ff5722]"
+        textColor="text-white"
+        icon={<Layers size={24} className="text-white" />}
+        isAI={false}
       />
 
       <ServiceCard
         title={
           <>
-            AI, ML & GEN-AI <br />
-            APPLICATIONS
+            AI, ML & Gen-AI <br />
+            Applications
           </>
         }
-        bg="bg-lime-400"
-        icon={<Cpu size={28} />}
+        bg="bg-[#bfff00]"
+        textColor="text-black"
+        icon={<Cpu size={24} className="text-black" />}
+        isAI={true}
       />
     </div>
   );

@@ -1,22 +1,18 @@
 export default function ContactSection() {
   return (
     <section className="mt-24 mb-32">
-      <h2 className="text-[64px] font-extrabold text-white leading-none">
+      <h2 className="text-[100px] font-black text-white leading-[0.85] tracking-tighter uppercase">
         LET&apos;S WORK
-        <span className="block text-white/20">TOGETHER</span>
+        <span className="block text-[#1a1a1a]">TOGETHER</span>
       </h2>
 
       <form
-        action="https://formspree.io/f/xvzkyggj"   // 🔁 replace with your Formspree ID
+        action="https://formspree.io/f/xvzkyggj" // 🔁 replace with your Formspree ID
         method="POST"
         className="mt-14 space-y-6 max-w-3xl"
       >
         <div className="grid grid-cols-2 gap-6">
-          <Input
-            label="Name"
-            name="name"
-            placeholder="Your Name"
-          />
+          <Input label="Name" name="name" placeholder="Your Name" />
 
           <Input
             label="Email"

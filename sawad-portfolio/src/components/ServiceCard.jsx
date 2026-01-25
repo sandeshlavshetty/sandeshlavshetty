@@ -1,51 +1,59 @@
-export default function ServiceCard({ title, bg, icon }) {
+import { ArrowRight } from "lucide-react";
+
+export default function ServiceCard({ title, bg, icon, isAI, textColor = "text-black" }) {
   return (
     <div
       className={`
         relative
-        w-[260px] h-[180px]
-        rounded-2xl
-        p-6
+        flex-1 h-[280px]
+        rounded-[32px]
+        p-8
         ${bg}
-        text-black
+        ${textColor}
         overflow-hidden
         transition-all duration-300
-        hover:-translate-y-1
-        hover:shadow-xl
+        hover:scale-[1.02]
         cursor-pointer
+        group
       `}
     >
-      {/* Decorative lines */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <svg width="100%" height="100%">
-          <path
-            d="M0 40 Q130 10 260 40"
-            stroke="black"
-            strokeWidth="1"
-            fill="none"
-          />
-          <path
-            d="M0 90 Q130 60 260 90"
-            stroke="black"
-            strokeWidth="1"
-            fill="none"
-          />
-        </svg>
+      {/* BACKGROUND DECORATIVE LINES */}
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        {isAI ? (
+          /* Zig-Zag Scribble for AI Card */
+          <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path 
+              d="M0 20 L20 80 L40 20 L60 80 L80 20 L100 80" 
+              stroke="currentColor" 
+              fill="transparent" 
+              strokeWidth="1.5" 
+            />
+          </svg>
+        ) : (
+          /* Smooth Waves for Backend Card */
+          <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0 30 Q50 10 100 30" stroke="currentColor" fill="none" strokeWidth="1" />
+            <path d="M0 60 Q50 40 100 60" stroke="currentColor" fill="none" strokeWidth="1" />
+            <path d="M0 90 Q50 70 100 90" stroke="currentColor" fill="none" strokeWidth="1" />
+          </svg>
+        )}
       </div>
 
-      {/* Icon */}
-      <div className="relative z-10 mb-4">
-        {icon}
-      </div>
+      <div className="relative z-10 h-full flex flex-col justify-between">
+        {/* Icon Wrapper */}
+        <div className="bg-black/10 w-12 h-12 rounded-xl flex items-center justify-center">
+          {icon}
+        </div>
 
-      {/* Title */}
-      <h3 className="relative z-10 font-semibold leading-snug text-sm">
-        {title}
-      </h3>
+        {/* Title - Matches Framer font settings */}
+        <h3 className="text-[22px] font-black leading-[1.1] uppercase tracking-tight">
+          {title}
+        </h3>
 
-      {/* Arrow */}
-      <div className="absolute bottom-4 right-4 text-xl">
-        →
+        {/* Bottom Arrow Icon */}
+        <div className="self-end p-2 border border-black/20 rounded-full group-hover:bg-black group-hover:text-white transition-colors">
+          <ArrowRight size={20} />
+        </div>
       </div>
     </div>
   );

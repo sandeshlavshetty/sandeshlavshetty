@@ -13,7 +13,13 @@
   animation: vertical-scroll 30s linear infinite;
 }
 
+/* REMOVE overflow-x: hidden from html/body */
 html, body {
-  overflow-x: hidden;
   background-color: #0b0b0b;
+  /* overflow-x: hidden; ← REMOVE THIS */
+}
+
+/* Instead, add it only where needed */
+.main-wrapper {
+  overflow-x: hidden;
 }

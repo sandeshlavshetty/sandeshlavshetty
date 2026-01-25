@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import Reveal from "../components/Reveal";
 import HeroText from "../components/HeroText";
 import ServicesSection from "../components/ServicesSection";
 import ExperienceSection from "../components/ExperienceSection";
@@ -21,12 +22,29 @@ export default function HomePage() {
 
   return (
     <>
-      <HeroText />
-      <ServicesSection />
-      <ExperienceSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <ThoughtsSection />
+      <Reveal y={0} duration={900}>
+        <HeroText />
+      </Reveal>
+
+      <Reveal delay={0.05}>
+        <ServicesSection />
+      </Reveal>
+
+      <Reveal delay={0.1}>
+        <ExperienceSection />
+      </Reveal>
+
+      <Reveal delay={0.1}>
+        <ProjectsSection />
+      </Reveal>
+
+      <Reveal delay={0.1}>
+        <SkillsSection />
+      </Reveal>
+
+      <Reveal delay={0.1}>
+        <ThoughtsSection />
+      </Reveal>
     </>
   );
 }

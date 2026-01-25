@@ -3,39 +3,43 @@ import { Github, Linkedin, Youtube, Mail, FileUser } from "lucide-react";
 
 export default function ProfileCard() {
   return (
-    <div className="flex flex-col items-center bg-white text-black w-full max-w-[320px] h-[540px] rounded-2xl overflow-hidden">
+    <div className="relative bg-white text-black w-full max-w-[320px] h-[540px] rounded-[32px] overflow-hidden shadow-sm font-['Poppins']">
       
-      {/* Name */}
-      <div className="mt-8 text-center">
-        <h2 className="text-3xl font-extrabold tracking-tight">
-          Sandesh
-        </h2>
-        <h3 className="text-3xl font-extrabold tracking-tight">
-          Lavshetty
-        </h3>
-      </div>
+      {/* CONTENT WRAPPER */}
+      <div className="flex flex-col items-center h-full px-8">
 
-      {/* Image */}
-      <div className="mt-6">
-        <img
-          src={profileImg}
-          alt="Sandesh Lavshetty"
-          className="w-[220px] h-[300px] object-cover rounded-xl"
-        />
-      </div>
+        {/* Name - Tighter and Bolder */}
+        <div className="pt-10 text-center">
+          <h2 className="text-[32px] font-black leading-[0.9] tracking-tight">
+            Sandesh<br />Lavshetty
+          </h2>
+        </div>
 
-      {/* Subtitle */}
-      <p className="mt-6 px-6 text-center text-sm text-neutral-600 leading-relaxed">
-        Backend & AI Engineer focused on building scalable, production-ready systems.
-      </p>
+        {/* Image Container - Matches "Fit" and "Relative" settings */}
+        <div className="relative mt-8 w-fit h-fit">
+          <img
+            src={profileImg}
+            alt="Sandesh Lavshetty"
+            className="w-[200px] h-[280px] object-cover rounded-2xl"
+          />
+        </div>
 
-      {/* Social Icons */}
-      <div className="mt-auto mb-8 flex gap-6">
-        <Github className="hover:text-black/70 cursor-pointer" />
-        <Linkedin className="hover:text-black/70 cursor-pointer" />
-        <Youtube className="hover:text-black/70 cursor-pointer" />
-        <Mail className="hover:text-black/70 cursor-pointer" />
-        <FileUser className="hover:text-black/70 cursor-pointer" />
+        {/* Subtitle - Exact Framer Specs: 18px, Medium, 110% Line Height */}
+        <p className="mt-8 text-center text-[18px] font-medium text-neutral-500 leading-[1.1] max-w-[220px]">
+          Backend & Ai Engineer building scalable system
+        </p>
+
+        <div className="flex-1" />
+
+        {/* Icons - Styled to match the orange/red UI mockup */}
+        <div className="pb-10 flex gap-5 text-[#ef562f]">
+          <Github className="cursor-pointer hover:scale-110 transition-transform" size={24} />
+          <Linkedin className="cursor-pointer hover:scale-110 transition-transform" size={24} />
+          <Mail className="cursor-pointer hover:scale-110 transition-transform" size={24} />
+          <Youtube className="cursor-pointer hover:scale-110 transition-transform" size={24} />
+          <FileUser className="cursor-pointer hover:scale-110 transition-transform" size={24} />
+        </div>
+
       </div>
     </div>
   );

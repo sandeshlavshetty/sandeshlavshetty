@@ -1,20 +1,24 @@
 import { ArrowRight } from "lucide-react";
 
-export default function ServiceCard({ title, bg, icon, isAI, textColor = "text-black" }) {
+export default function ServiceCard({
+  title,
+  bg,
+  icon,
+  isAI,
+  textColor = "text-black",
+  onClick, // ✅ added
+}) {
   return (
     <div
+      onClick={onClick}
       className={`
-        relative
-        flex-1 h-[280px]
-        rounded-[32px]
-        p-8
-        ${bg}
-        ${textColor}
+        relative flex-1 h-[280px]
+        rounded-[32px] p-8
+        ${bg} ${textColor}
         overflow-hidden
         transition-all duration-300
         hover:scale-[1.02]
-        cursor-pointer
-        group
+        cursor-pointer group
       `}
     >
       {/* BACKGROUND DECORATIVE LINES */}

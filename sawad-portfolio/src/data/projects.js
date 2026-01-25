@@ -4,7 +4,7 @@ export const projects = {
     title: "Damas",
     subtitle: "Free Framer Template",
     image: "/projects/damas.png",
-    demo: "https://damas.framer.site",
+    demo: "",
     github: "https://github.com/yourusername/damas",
     description: `
 ### Overview

@@ -8,7 +8,7 @@ export default function FloatingActions() {
         href="https://youtube.com/your-intro-video"
         target="_blank"
         className="
-          fixed bottom-6 left-6 z-50
+          fixed bottom-20 lg:bottom-6 left-6 z-50
           flex items-center gap-2
           bg-red-600 hover:bg-red-700
           text-white px-4 py-3
@@ -25,7 +25,7 @@ export default function FloatingActions() {
         href="/Sandesh_Lavshetty_Resume.pdf"
         target="_blank"
         className="
-          fixed bottom-6 right-6 z-50
+          fixed bottom-20 lg:bottom-6 right-6 z-50
           flex items-center gap-2
           bg-white text-black
           px-4 py-3

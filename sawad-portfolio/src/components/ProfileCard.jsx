@@ -3,8 +3,13 @@ import { Github, Linkedin, Youtube, Mail, FileUser } from "lucide-react";
 
 export default function ProfileCard() {
   return (
-    <div className="relative bg-white text-black w-full max-w-[320px] h-[540px] rounded-[32px] overflow-hidden shadow-sm font-['Poppins']">
-      
+    <div className="
+  relative bg-white text-black
+  w-full max-w-[280px] sm:max-w-[320px]
+  min-h-[520px]
+  rounded-[32px]
+  overflow-hidden
+">    
       {/* CONTENT WRAPPER */}
       <div className="flex flex-col items-center h-full px-8">
 

@@ -4,27 +4,30 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="max-w-7xl mx-auto px-10">
-      <div className="grid grid-cols-[320px_1fr] gap-24">
-        
-        {/* LEFT — Sticky Profile */}
-        <div className="relative">
-          <div className="sticky top-28">
+    <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-10">
+      <div
+        className="
+          grid
+          grid-cols-1
+          lg:grid-cols-[320px_1fr]
+          gap-16 lg:gap-24
+          items-start
+        "
+      >
+        {/* PROFILE COLUMN */}
+        <div className="relative h-full">
+          {/* Desktop: sticky | Mobile: normal */}
+          <div className="lg:sticky lg:top-28 flex justify-center lg:block">
             <ProfileCard />
           </div>
         </div>
 
-        {/* RIGHT — Scrollable Content */}
-        <div className="flex flex-col">
+        {/* MAIN CONTENT */}
+        <div className="flex flex-col min-h-screen">
           {children}
-
-          {/* Global Contact */}
           <ContactSection />
-
-          {/* Global Footer */}
           <Footer />
         </div>
-
       </div>
     </div>
   );

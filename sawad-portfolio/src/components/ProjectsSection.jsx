@@ -14,7 +14,7 @@ export default function ProjectsSection() {
     <>
       <section className="mt-32">
         {/* Heading */}
-        <h2 className="text-[100px] font-black text-white leading-[0.85] tracking-tighter uppercase">
+        <h2 className="text-[48px] sm:text-[72px] lg:text-[100px] font-black text-white leading-[0.85] tracking-tighter uppercase">
           RECENT
           <span className="block text-[#1a1a1a]">PROJECTS</span>
         </h2>

@@ -12,3 +12,8 @@
 .animate-vertical-scroll {
   animation: vertical-scroll 30s linear infinite;
 }
+
+html, body {
+  overflow-x: hidden;
+  background-color: #0b0b0b;
+}

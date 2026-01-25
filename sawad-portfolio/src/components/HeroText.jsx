@@ -1,11 +1,20 @@
+import Reveal from "./Reveal";
 export default function HeroText() {
   return (
+     <Reveal y={0} duration={900}>
     <div className="flex flex-col justify-center max-w-4xl mb-16">
-      
       {/* Big Heading - Increased size and weight */}
-      <h1 className="text-[110px] font-black leading-[0.9] text-white tracking-tighter">
+      <h1
+        className="
+  text-[56px] sm:text-[72px] lg:text-[110px]
+  font-black leading-[0.9]
+  text-white tracking-tighter
+"
+      >
         SOFTWARE
-        <span className="block text-[#1a1a1a] dark:text-white/10">ENGINEER</span>
+        <span className="block text-[#1a1a1a] dark:text-white/10">
+          ENGINEER
+        </span>
       </h1>
 
       {/* Description - Slightly larger text with better line height */}
@@ -20,15 +29,19 @@ export default function HeroText() {
         <Stat number="+10" label={["PROJECTS", "COMPLETED"]} />
         <Stat number="+3000" label={["ACTIVE", "USERS"]} />
       </div>
-
     </div>
+    </Reveal>
   );
 }
 
 function Stat({ number, label }) {
   return (
     <div className="flex flex-col">
-      <p className="text-[72px] font-bold text-white leading-none tracking-tighter">
+      <p className="
+  text-[40px] sm:text-[56px] lg:text-[72px]
+  font-bold text-white
+">
+
         {number}
       </p>
       <div className="text-[13px] text-gray-500 mt-3 font-semibold uppercase tracking-widest leading-tight">

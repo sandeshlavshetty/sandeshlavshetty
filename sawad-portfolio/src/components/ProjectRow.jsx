@@ -4,7 +4,11 @@ export default function ProjectRow({ title, subtitle, image, onClick }) {
   return (
     <div
       onClick={onClick}
-      className="group flex items-center justify-between cursor-pointer py-6 border-b border-white/5 hover:border-white/10 transition-all"
+      className="group flex flex-col sm:flex-row
+  sm:items-center sm:justify-between
+  gap-6
+  cursor-pointer py-6
+  border-b border-white/5"
     >
       <div className="flex items-center gap-8">
         <img src={image} className="w-[100px] h-[100px] rounded-2xl object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />

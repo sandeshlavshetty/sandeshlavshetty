@@ -5,7 +5,7 @@ export default function ThoughtsSection() {
   return (
     <section id="thoughts" className="mt-32">
       {/* High-Impact Heading matching UI */}
-      <h2 className="text-[100px] font-black text-white leading-[0.85] tracking-tighter uppercase">
+      <h2 className="text-[48px] sm:text-[72px] lg:text-[100px] font-black text-white leading-[0.85] tracking-tighter uppercase">
         ENGINEERING
         <span className="block text-[#1a1a1a]">THOUGHTS</span>
       </h2>

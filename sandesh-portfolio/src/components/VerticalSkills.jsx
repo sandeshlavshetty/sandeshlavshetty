@@ -17,11 +17,11 @@ export default function VerticalSkills({ skills }) {
 
 function SkillGrid({ skills }) {
   return (
-    <div className="grid grid-cols-3 gap-4 py-4">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 py-3 sm:py-4">
       {skills.map((skill, i) => (
         <div
           key={i}
-          className="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-white text-center"
+          className="px-2 sm:px-3 md:px-4 py-2 sm:py-2.5 md:py-3 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 text-xs sm:text-sm text-white text-center font-medium"
         >
           {skill}
         </div>

@@ -28,36 +28,36 @@ export default function ProjectModal({ project, onClose }) {
   if (!project) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center px-6">
+    <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center px-3 sm:px-4 py-4 sm:py-6 overflow-y-auto">
       {/* Modal */}
-      <div className="relative bg-[#111] w-full max-w-5xl rounded-2xl p-8 max-h-[90vh] overflow-y-auto">
+      <div className="relative bg-[#111] w-full max-w-5xl rounded-xl sm:rounded-2xl p-5 sm:p-8 max-h-[90vh] sm:max-h-[90vh] overflow-y-auto">
 
         {/* Close */}
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 text-white/60 hover:text-white transition"
+          className="absolute top-4 sm:top-6 right-4 sm:right-6 text-white/60 hover:text-white transition"
         >
-          <X size={22} />
+          <X size={20} />
         </button>
 
         {/* Title */}
-        <h2 className="text-4xl font-bold text-white mb-1">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">
           {project.title}
         </h2>
 
-        <p className="text-gray-400 mb-6">
+        <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">
           {project.subtitle}
         </p>
 
         {/* Action Buttons (OPTIONAL) */}
         {(project.demo || project.github) && (
-          <div className="flex gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mb-6 sm:mb-10">
             {project.demo && (
               <a
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2 rounded-lg bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition"
+                className="px-4 sm:px-5 py-2 rounded-lg bg-orange-500 text-white text-xs sm:text-sm font-semibold hover:bg-orange-600 transition text-center"
               >
                 Live Demo
               </a>
@@ -68,7 +68,7 @@ export default function ProjectModal({ project, onClose }) {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2 rounded-lg border border-white/20 text-white text-sm hover:bg-white/10 transition"
+                className="px-4 sm:px-5 py-2 rounded-lg border border-white/20 text-white text-xs sm:text-sm hover:bg-white/10 transition text-center"
               >
                 GitHub
               </a>
@@ -96,23 +96,23 @@ export default function ProjectModal({ project, onClose }) {
         )}
 
         {/* Divider */}
-        <div className="border-t border-white/10 mb-10" />
+        <div className="border-t border-white/10 mb-6 sm:mb-10" />
 
         {/* Markdown Content */}
         <ReactMarkdown
           components={{
             h3: ({ children }) => (
-              <h3 className="text-xl font-semibold text-white mt-8 mb-3">
+              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white mt-4 sm:mt-8 mb-2 sm:mb-3">
                 {children}
               </h3>
             ),
             p: ({ children }) => (
-              <p className="text-gray-300 leading-relaxed mb-4">
+              <p className="text-gray-300 leading-relaxed mb-3 sm:mb-4 text-xs sm:text-sm md:text-base">
                 {children}
               </p>
             ),
             ul: ({ children }) => (
-              <ul className="list-disc pl-6 space-y-2 mb-4 text-gray-300">
+              <ul className="list-disc pl-4 sm:pl-6 space-y-1.5 sm:space-y-2 mb-3 sm:mb-4 text-gray-300 text-xs sm:text-sm md:text-base">
                 {children}
               </ul>
             ),

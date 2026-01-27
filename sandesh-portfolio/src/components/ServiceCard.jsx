@@ -12,8 +12,8 @@ export default function ServiceCard({
     <div
       onClick={onClick}
       className={`
-        relative flex-1 h-[280px]
-        rounded-[32px] p-8
+        relative flex-1 min-h-[240px] sm:h-[260px] md:h-[280px]
+        rounded-[20px] sm:rounded-[28px] md:rounded-[32px] p-6 sm:p-7 md:p-8
         ${bg} ${textColor}
         overflow-hidden
         transition-all duration-300
@@ -50,7 +50,7 @@ export default function ServiceCard({
         </div>
 
         {/* Title - Matches Framer font settings */}
-        <h3 className="text-[22px] font-black leading-[1.1] uppercase tracking-tight">
+        <h3 className="text-sm sm:text-lg md:text-[22px] font-black leading-[1.1] uppercase tracking-tight">
           {title}
         </h3>
 

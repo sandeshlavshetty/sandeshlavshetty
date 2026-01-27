@@ -1,11 +1,12 @@
 import { Youtube, FileUser } from "lucide-react";
+import resumePdf from "../assets/portfolio.pdf";
 
 export default function FloatingActions() {
   return (
     <>
       {/* Left — Intro Video */}
       <a
-        href="https://youtube.com/your-intro-video"
+        href="https://youtu.be/oOaaK6PG4Jc"
         target="_blank"
         className="
           fixed bottom-20 lg:bottom-6 left-6 z-50
@@ -22,7 +23,7 @@ export default function FloatingActions() {
 
       {/* Right — Resume */}
       <a
-        href="/Sandesh_Lavshetty_Resume.pdf"
+        href={resumePdf}
         target="_blank"
         className="
           fixed bottom-20 lg:bottom-6 right-6 z-50

@@ -98,7 +98,7 @@ export default function ServiceModal({ service, onClose }) {
             <a
               href={service.resume}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="
                 flex items-center gap-2
                 px-6 py-3

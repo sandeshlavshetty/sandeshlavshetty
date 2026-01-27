@@ -1,9 +1,11 @@
+import resumePdf from "../assets/portfolio.pdf";
+
 export const services = {
   backend: {
     id: "backend",
     title: "Backend Systems & API Engineering",
-    github: "https://github.com/yourusername",
-    resume: "../assets/portfolio.pdf",
+    github: "https://github.com/sandeshlavshetty",
+    resume: resumePdf,
     description: `
 ### Who this is for
 Recruiters looking for **Backend / Platform / API Engineers**.
@@ -24,8 +26,8 @@ I care deeply about **system reliability, clean abstractions, and performance**,
   ai: {
     id: "ai",
     title: "AI, ML & Gen-AI Applications",
-    github: "https://github.com/yourusername",
-    resume: "../assets/portfolio.pdf",
+    github: "https://github.com/sandeshlavshetty",
+    resume: resumePdf,
     description: `
 ### Who this is for
 Recruiters hiring **AI / ML / Gen-AI Engineers**.

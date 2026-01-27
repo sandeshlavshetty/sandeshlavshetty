@@ -1,4 +1,5 @@
 import profileImg from "../assets/profile.png";
+import resumePdf from "../assets/portfolio.pdf";
 import { Github, Linkedin, Youtube, Mail, FileUser } from "lucide-react";
 
 export default function ProfileCard() {
@@ -50,7 +51,7 @@ export default function ProfileCard() {
           <a href="https://www.youtube.com/channel/UCLq8xLiaNR0HF352JgWSvZw" target="_blank" rel="noopener noreferrer">
             <Youtube className="cursor-pointer hover:scale-110 transition-transform" size={24} />
           </a>
-          <a href="#resume">
+          <a href={resumePdf} target="_blank" rel="noopener noreferrer">
             <FileUser className="cursor-pointer hover:scale-110 transition-transform" size={24} />
           </a>
         </div>

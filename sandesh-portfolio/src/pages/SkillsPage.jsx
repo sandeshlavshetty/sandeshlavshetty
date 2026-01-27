@@ -10,76 +10,109 @@ export default function SkillsPage() {
       </h1>
 
       <div className="mt-24 space-y-20">
-        <SkillCategory
-          title="Languages"
-          skills={[
-            "C", "C++", "Python", "HTML", "CSS", "JavaScript"
-          ]}
-        />
+       <SkillCategory
+  title="Programming Languages"
+  skills={[
+    "Python",
+    "C++",
+    "C",
+    "JavaScript",
+    "SQL"
+  ]}
+/>
 
-        <SkillCategory
-          title="Frameworks & Libraries"
-          skills={[
-            "FastAPI", "React.js", "Node.js", "Flask",
-            "LangChain", "LangGraph", "Agentic Pipelines",
-            "SQLAlchemy", "Scikit-learn",
-            "TensorFlow", "PyTorch",
-            "Pandas", "NumPy", "CI/CD"
-          ]}
-        />
+<SkillCategory
+  title="Backend & API Frameworks"
+  skills={[
+    "FastAPI",
+    "Flask",
+    "Node.js",
+    "Express.js",
+    "SQLAlchemy"
+  ]}
+/>
 
-        <SkillCategory
-          title="Developer Tools"
-          skills={[
-            "VS Code", "Git", "GitHub", "Postman"
-          ]}
-        />
+<SkillCategory
+  title="AI / ML & Gen-AI"
+  skills={[
+    "Machine Learning",
+    "Deep Learning",
+    "Natural Language Processing (NLP)",
+    "LangChain",
+    "LangGraph",
+    "Agentic AI Pipelines",
+    "Scikit-learn",
+    "TensorFlow",
+    "PyTorch"
+  ]}
+/>
 
-        <SkillCategory
-          title="Cloud, Databases & Infrastructure"
-          skills={[
-            "MySQL", "PostgreSQL", "MongoDB",
-            "Firebase",
-            "Vector Databases (ChromaDB, Pinecone)",
-            "Nginx"
-          ]}
-        />
+<SkillCategory
+  title="Data & ML Tooling"
+  skills={[
+    "Pandas",
+    "NumPy",
+    "Feature Engineering",
+    "Model Training & Evaluation",
+    "Data Pipelines"
+  ]}
+/>
 
-        <SkillCategory
-          title="Relevant Coursework"
-          skills={[
-            "Data Structures & Algorithms",
-            "Operating Systems",
-            "Object Oriented Programming",
-            "Database Management Systems",
-            "Software Engineering",
-            "Computer Networks",
-            "Multicore Architecture",
-            "Natural Language Processing",
-            "Machine Learning & Deep Learning"
-          ]}
-        />
+<SkillCategory
+  title="Databases & Storage"
+  skills={[
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Firebase",
+    "Vector Databases (ChromaDB, Pinecone)"
+  ]}
+/>
 
-        <SkillCategory
-          title="Areas of Interest"
-          skills={[
-            "Product Management",
-            "Full Stack Web Development",
-            "Generative AI Applications",
-            "Agentic AI (LLMs)",
-            "Feature Design & Development"
-          ]}
-        />
+<SkillCategory
+  title="Cloud, DevOps & Infrastructure"
+  skills={[
+    "Nginx",
+    "CI/CD Pipelines",
+    "Server Deployment",
+    "API Security",
+    "System Monitoring"
+  ]}
+/>
 
-        <SkillCategory
-          title="Project Management"
-          skills={[
-            "Agile Methodologies",
-            "Scrum Framework",
-            "Project Planning",
-            "Execution & Delivery"
-          ]}
-        />
+<SkillCategory
+  title="Developer Tools"
+  skills={[
+    "Git",
+    "GitHub",
+    "Postman",
+    "VS Code"
+  ]}
+/>
+
+<SkillCategory
+  title="Computer Science Foundations"
+  skills={[
+    "Data Structures & Algorithms",
+    "Operating Systems",
+    "Database Management Systems",
+    "Computer Networks",
+    "Object-Oriented Programming",
+    "Multicore Architecture"
+  ]}
+/>
+
+<SkillCategory
+  title="Product & Project Skills"
+  skills={[
+    "Agile Methodologies",
+    "Scrum Framework",
+    "Project Planning",
+    "Execution & Delivery",
+    "Feature Design"
+  ]}
+/>
+
       </div>
     </section>
   );

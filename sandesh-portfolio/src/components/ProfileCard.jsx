@@ -38,11 +38,21 @@ export default function ProfileCard() {
 
         {/* Icons - Styled to match the orange/red UI mockup */}
         <div className="pb-10 flex gap-5 text-[#ef562f]">
-          <Github className="cursor-pointer hover:scale-110 transition-transform" size={24} />
-          <Linkedin className="cursor-pointer hover:scale-110 transition-transform" size={24} />
-          <Mail className="cursor-pointer hover:scale-110 transition-transform" size={24} />
-          <Youtube className="cursor-pointer hover:scale-110 transition-transform" size={24} />
-          <FileUser className="cursor-pointer hover:scale-110 transition-transform" size={24} />
+          <a href="https://github.com/sandeshlavshetty" target="_blank" rel="noopener noreferrer">
+            <Github className="cursor-pointer hover:scale-110 transition-transform" size={24} />
+          </a>
+          <a href="https://www.linkedin.com/in/sandesh-lavshetty-143334281/" target="_blank" rel="noopener noreferrer">
+            <Linkedin className="cursor-pointer hover:scale-110 transition-transform" size={24} />
+          </a>
+          <a href="mailto:sandeshlavshetty@gmail.com">
+            <Mail className="cursor-pointer hover:scale-110 transition-transform" size={24} />
+          </a>
+          <a href="https://www.youtube.com/channel/UCLq8xLiaNR0HF352JgWSvZw" target="_blank" rel="noopener noreferrer">
+            <Youtube className="cursor-pointer hover:scale-110 transition-transform" size={24} />
+          </a>
+          <a href="#resume">
+            <FileUser className="cursor-pointer hover:scale-110 transition-transform" size={24} />
+          </a>
         </div>
 
       </div>

@@ -3,22 +3,22 @@ export const thoughts = {
 
   posts: [
     {
-      id: "career-web-design",
-      title: "Starting and Growing a Career in Web Design",
+      id: "llm-agent-architecture",
+      title: "LLM Agent Architecture and Frameworks",
       desc:
-        "As the internet continues to develop and grow exponentially, jobs related to the industry do too, particularly those that relate to web design and development.",
-      date: "Apr 8, 2022",
-      read: "6 min read",
-      link: "https://medium.com/@sandeshtlavshetty/syntax-showdown-php-vs-javascript-vs-python-d7a9fab33991",
+        "Modern agentic systems typically use an LLM as a “reasoning engine” that selects actions from a toolkit of pre-defined functions. Frameworks like LangChain and LangGraph are well-suited here. ",
+      date: "Aug 11, 2025",
+      read: "11 min read",
+      link: "https://medium.com/@sandeshtlavshetty/llm-agent-architecture-and-frameworks-bd76a1ef162c",
     },
     {
-      id: "landing-page-performance",
-      title: "Create a Landing Page That Performs Great",
+      id: "syntax-showdown",
+      title: "Syntax Showdown: PHP vs. JavaScript vs. Python",
       desc:
-        "Whether you work in marketing, sales, or product design, knowing how to structure a high-performing landing page is critical.",
-      date: "Mar 12, 2022",
+        "Juggling PHP, JavaScript, and Python? 🤔This blog is your secret weapon! Learn how these languages handle variables, loops, and more, in a quick and easy-to-understand format. ",
+      date: "May 22, 2024",
       read: "5 min read",
-      link: "https://medium.com/@yourusername/landing-page-performance",
+      link: "https://medium.com/@sandeshtlavshetty/syntax-showdown-php-vs-javascript-vs-python-d7a9fab33991",
     },
   ],
 };

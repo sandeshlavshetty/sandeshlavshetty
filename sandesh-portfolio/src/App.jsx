@@ -3,18 +3,24 @@ import Navbar from "./components/Navbar";
 import Layout from "./components/Layout";
 import FloatingActions from "./components/FloatingActions";
 import ScrollToTop from "./components/ScrollToTop";
+import ModalPortal from "./components/ModalPortal";
+import { ModalProvider } from "./context/ModalContext";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import SkillsPage from "./pages/SkillsPage";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0b0b0b]">
-      <Navbar />
-      <FloatingActions />
+    <ModalProvider>
+      <div className="min-h-screen bg-[#0b0b0b]">
+        <Navbar />
+        <FloatingActions />
 
-      {/* 🔥 Global scroll fix */}
-      <ScrollToTop />
+        {/* 🔥 Global scroll fix */}
+        <ScrollToTop />
+        
+        {/* 🔥 Global Modal Portal */}
+        <ModalPortal />
 
       <div className="pt-16">
         <Routes>
@@ -49,7 +55,8 @@ function App() {
           />
         </Routes>
       </div>
-    </div>
+      </div>
+    </ModalProvider>
   );
 }
 

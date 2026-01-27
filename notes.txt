@@ -1,0 +1,160 @@
+================================================================================
+MODAL MANAGEMENT STRATEGY - GLOBAL PORTAL APPROACH
+================================================================================
+
+PROBLEM IDENTIFIED:
+------------------
+All modals were getting stuck/constrained by their parent section sizes. When two
+sections were visible on screen (e.g., half Experience section + half Skills section),
+the modal would be stuck within that section's bounds and couldn't scroll or display
+properly. Users had to close the modal and scroll to make it work again.
+
+ROOT CAUSE:
+-----------
+• Modals were rendered locally within each section component (ExperienceSection, 
+  ProjectsSection, ServicesSection)
+• They used local state (useState) to manage open/close
+• Modal containers inherited height constraints from parent sections
+• Multiple modals in DOM (one per section) created z-stacking conflicts
+
+SOLUTION: GLOBAL MODAL PORTAL PATTERN
+======================================
+
+1. CENTRALIZED CONTEXT (ModalContext.jsx)
+   ├─ Created a React Context to manage ALL modal states globally
+   ├─ Single source of truth for: experience, project, service modals
+   ├─ Functions: openModal(), closeModal(), closeAllModals()
+   └─ Benefits: Lift modal state to app root level
+
+2. MODAL PORTAL COMPONENT (ModalPortal.jsx)
+   ├─ Renders ALL modals at document root (not inside sections)
+   ├─ Listens to ModalContext and conditionally renders each modal
+   ├─ Ensures only ONE modal visible at a time
+   ├─ Positioned at FIXED viewport level
+   └─ Benefits: No parent constraint, full viewport control
+
+3. APP.JSX INTEGRATION
+   ├─ Wrapped entire app with <ModalProvider>
+   ├─ Placed <ModalPortal /> at root level (after Navbar, FloatingActions)
+   ├─ Modals now render independently of page sections
+   └─ Benefits: Single global z-index layer for all modals
+
+4. UPDATED SECTIONS
+   ├─ ExperienceSection: Removed local useState, uses useModal() context
+   ├─ ProjectsSection: Removed local useState, uses useModal() context
+   ├─ ServicesSection: Removed local useState, uses useModal() context
+   ├─ Sections now just call openModal("type", data) on card click
+   └─ Benefits: No modal DOM in sections, cleaner component code
+
+5. IMPROVED MODAL LAYOUT
+   ├─ Changed from drawer-style (side) to centered modal
+   ├─ Uses fixed inset-0 with flex centering
+   ├─ Max-width constraint: 2xl (w-full max-w-2xl)
+   ├─ Max-height with overflow: max-h-[85vh] overflow-y-auto
+   ├─ Responsive padding and font sizes
+   └─ Benefits: Works on all screen sizes, never constrained by sections
+
+KEY FEATURES:
+=============
+✓ Modals render ABOVE all sections (z-50)
+✓ Click outside to close (backdrop click detection)
+✓ Escape key to close (keyboard support)
+✓ Body scroll locked when modal open
+✓ Sticky header with scrollable content
+✓ Works perfectly when sections overlap on screen
+✓ Multiple modals won't conflict
+✓ Single modal visible at a time
+✓ Responsive on mobile and desktop
+
+ARCHITECTURE DIAGRAM:
+====================
+App (root)
+├─ ModalProvider (context wrapper)
+│  ├─ Navbar
+│  ├─ FloatingActions
+│  ├─ ScrollToTop
+│  ├─ ModalPortal (renders modals at root level)
+│  │  ├─ ExperienceModal (if modals.experience)
+│  │  ├─ ProjectModal (if modals.project)
+│  │  └─ ServiceModal (if modals.service)
+│  │
+│  ├─ Routes
+│  │  ├─ HomePage
+│  │  │  └─ ExperienceSection (calls openModal("experience", exp))
+│  │  │  └─ ProjectsSection (calls openModal("project", proj))
+│  │  │  └─ ServicesSection (calls openModal("service", svc))
+│  │  │  └─ (NO MODALS HERE - they render in ModalPortal)
+│  │  │
+│  │  ├─ ProjectsPage
+│  │  └─ SkillsPage
+
+FILES CHANGED:
+==============
+1. NEW: src/context/ModalContext.jsx
+   - ModalProvider component
+   - useModal() hook
+   - Global modal state management
+
+2. NEW: src/components/ModalPortal.jsx
+   - Renders all modals based on context state
+   - Central place for all modal display logic
+
+3. UPDATED: src/App.jsx
+   - Wrapped with ModalProvider
+   - Added ModalPortal component at root
+
+4. UPDATED: src/components/ExperienceModal.jsx
+   - Changed from drawer to centered modal
+   - Better responsive design
+   - Improved scroll handling
+
+5. UPDATED: src/components/ExperienceSection.jsx
+   - Removed useState for activeExp
+   - Removed modal component rendering
+   - Uses useModal() context hook
+   - Cleaner code
+
+6. UPDATED: src/components/ProjectsSection.jsx
+   - Removed useState for activeProject
+   - Removed ProjectModal component rendering
+   - Uses useModal() context hook
+
+7. UPDATED: src/components/ServicesSection.jsx
+   - Removed useState for activeService
+   - Removed ServiceModal component rendering
+   - Uses useModal() context hook
+
+WHY THIS WORKS:
+===============
+• Modals are no longer children of sections
+• Fixed positioning at viewport level (not relative to section)
+• Context manages state globally - no prop drilling needed
+• Backdrop click/Escape works because modal is at root z-layer
+• Multiple overlapping sections don't affect modal display
+• Single modal instance per type (efficient)
+• Easy to add new modal types - just add to ModalContext and ModalPortal
+
+SCALABILITY:
+============
+To add a new modal type (e.g., testimonial):
+
+1. Add to ModalContext.jsx:
+   modals: {
+     ...existing,
+     testimonial: null,
+   }
+
+2. Add to ModalPortal.jsx:
+   {modals.testimonial && (
+     <TestimonialModal
+       data={modals.testimonial}
+       onClose={() => closeModal("testimonial")}
+     />
+   )}
+
+3. In your section:
+   const { openModal } = useModal();
+   onClick={() => openModal("testimonial", data)}
+
+Done! No other changes needed.
+================================================================================

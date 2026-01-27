@@ -6,7 +6,7 @@ export default function ProfileCard() {
   return (
     <div className="
   relative bg-white text-black
-  w-full max-w-[260px] sm:max-w-[280px] md:max-w-[320px]
+  max-w-[260px] sm:max-w-[280px] md:max-w-[320px]
   min-h-[480px] sm:min-h-[520px]
   rounded-[24px] sm:rounded-[32px]
   overflow-hidden

@@ -14,7 +14,7 @@ export const experiences = [
 - Improved overall usability and **boosted student engagement by 45% within the first month** of launch.
 - Directed and coordinated a team of **frontend developers and content contributors**, ensuring timely milestone delivery and alignment with institutional requirements.
 - Developed **microservice-based HTTP services** using **FastAPI and Node.js**, gaining hands-on experience with **asynchronous programming, multithreading, synchronization, and cloud computing**, resulting in improved server performance.
-
+- Live at [https://iiitn.ac.in](https://iiitn.ac.in)
 
 ### Tech Stack
 - Node.js

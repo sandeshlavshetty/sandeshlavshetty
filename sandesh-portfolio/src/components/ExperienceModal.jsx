@@ -79,6 +79,16 @@ export default function ExperienceModal({ experience, onClose }) {
                   {children}
                 </p>
               ),
+              a: ({ children, href }) => (
+                <a 
+                  href={href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 underline transition"
+                >
+                  {children}
+                </a>
+              ),
               ul: ({ children }) => (
                 <ul className="list-disc pl-4 sm:pl-5 md:pl-6 space-y-1.5 sm:space-y-2 mb-3 sm:mb-4 text-gray-300 text-xs sm:text-sm md:text-base">
                   {children}

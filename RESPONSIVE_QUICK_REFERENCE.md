@@ -305,5 +305,64 @@ PERFORMANCE TIPS
 • Use heavy fonts on mobile (web safe fonts)
 
 ================================================================================
+SECTION LINK SHARING PATTERN (NEW)
+================================================================================
+
+QUICK SETUP:
+    // 1. Add imports
+    import { useState, useEffect } from "react";
+    import { Link } from "lucide-react";
+    
+    // 2. Add state
+    const [copiedLink, setCopiedLink] = useState(null);
+    
+    // 3. Add useEffect for hash navigation
+    useEffect(() => {
+      if (window.location.hash) {
+        const sectionId = window.location.hash.substring(1);
+        const element = document.getElementById(sectionId);
+        if (element) {
+          setTimeout(() => element.scrollIntoView({ behavior: "smooth" }), 100);
+        }
+      }
+    }, []);
+    
+    // 4. Add copy function
+    const copyToClipboard = (sectionId) => {
+      const url = `${window.location.origin}${window.location.pathname}#${sectionId}`;
+      navigator.clipboard.writeText(url);
+      setCopiedLink(sectionId);
+      setTimeout(() => setCopiedLink(null), 2000);
+    };
+
+SHARE BUTTON HTML:
+    <button
+      onClick={() => copyToClipboard("section-id")}
+      className="
+        p-2 rounded-lg
+        bg-white/5 hover:bg-white/10
+        text-white/60 hover:text-white
+        transition
+        flex items-center gap-2 whitespace-nowrap text-sm
+      "
+    >
+      <Link size={18} />
+      <span className="hidden sm:inline">
+        {isCopied ? "Copied!" : "Share"}
+      </span>
+    </button>
+
+SECTION DIV:
+    <div id="section-name">
+      <!-- Your section content here -->
+    </div>
+
+BENEFIT:
+    ✅ Share direct links: yoursite.com/page#section-name
+    ✅ Auto-scrolls to section when link is opened
+    ✅ Users can scroll freely after landing
+    ✅ Perfect for recruiters targeting specific categories
+
+================================================================================
 Responsive design makes your site work EVERYWHERE! 🎯
 ================================================================================

@@ -33,7 +33,14 @@ export default function ProjectsSection() {
           {...projects.najmai}
           onClick={() => openModal("project", projects.najmai)}
           />
+
+        <ProjectRow
+          {...projects.threatvision}
+          onClick={() => openModal("project", projects.threatvision)}
+          />
       </div>
+
+      
 
       {/* CTA → Projects Page */}
       <div className="mt-14 flex justify-end">

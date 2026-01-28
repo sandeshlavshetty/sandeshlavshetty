@@ -35,39 +35,38 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ================= DESKTOP NAV ================= */}
-      <div className="hidden lg:flex w-full justify-center pt-6">
-        <nav className="flex items-center gap-6 bg-black/60 backdrop-blur-md px-6 py-3 rounded-full border border-white/10">
-          {navItems.map((item) => (
-            <NavIcon
-              key={item.label}
-              icon={item.icon}
-              label={item.label}
-              onClick={() => handleNav(item)}
-            />
-          ))}
-        </nav>
-      </div>
+      {/* ================= FIXED TOP NAV (ALL DEVICES) ================= */}
+      <div className="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-md border-b border-white/10">
+        <div className="flex items-center justify-center py-2 sm:py-3">
+          {/* MOBILE - Horizontal compact icons */}
+          <nav className="flex sm:hidden justify-center items-center gap-4 sm:gap-6 px-2">
+            {navItems.map((item) => {
+              const Icon = item.icon;
+              return (
+                <button
+                  key={item.label}
+                  onClick={() => handleNav(item)}
+                  className="flex items-center justify-center text-white/60 hover:text-white transition"
+                  title={item.label}
+                >
+                  <Icon size={18} />
+                </button>
+              );
+            })}
+          </nav>
 
-      {/* ================= MOBILE / TABLET NAV ================= */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-t border-white/10">
-        <nav className="flex justify-around py-3">
-          {navItems.map((item) => {
-            const Icon = item.icon;
-            return (
-              <button
+          {/* TABLET+ - Centered nav with labels */}
+          <nav className="hidden sm:flex items-center gap-4 md:gap-6">
+            {navItems.map((item) => (
+              <NavIcon
                 key={item.label}
+                icon={item.icon}
+                label={item.label}
                 onClick={() => handleNav(item)}
-                className="flex flex-col items-center gap-1 text-white/60 hover:text-white transition"
-              >
-                <Icon size={20} />
-                <span className="text-[10px] font-medium">
-                  {item.label}
-                </span>
-              </button>
-            );
-          })}
-        </nav>
+              />
+            ))}
+          </nav>
+        </div>
       </div>
     </>
   );

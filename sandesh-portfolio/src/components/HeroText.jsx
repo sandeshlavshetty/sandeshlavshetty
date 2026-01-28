@@ -24,7 +24,7 @@ export default function HeroText() {
       </p>
 
       {/* Stats Section - Much larger impact numbers */}
-      <div className="flex gap-16 mt-16">
+      <div className="flex flex-row sm:flex-row flex-wrap sm:flex-nowrap sm:gap-8 md:gap-12 lg:gap-20 mt-8 sm:mt-12 md:mt-16 pt-8 sm:pt-10 md:pt-12">
         <Stat number="+1" label={["YEARS OF", "EXPERIENCE"]} />
         <Stat number="+10" label={["PROJECTS", "COMPLETED"]} />
         <Stat number="+3000" label={["ACTIVE", "USERS"]} />
@@ -36,15 +36,11 @@ export default function HeroText() {
 
 function Stat({ number, label }) {
   return (
-    <div className="flex flex-col">
-      <p className="
-  text-[40px] sm:text-[56px] lg:text-[72px]
-  font-bold text-white
-">
-
+    <div className="flex flex-col items-start sm:items-start flex-1 sm:flex-none mb-6 sm:mb-0 pr-4 sm:pr-0">
+      <p className="text-4xl sm:text-5xl md:text-[56px] lg:text-[72px] font-black text-white leading-none">
         {number}
       </p>
-      <div className="text-[13px] text-gray-500 mt-3 font-semibold uppercase tracking-widest leading-tight">
+      <div className="text-[9px] sm:text-[11px] md:text-[12px] lg:text-[13px] text-gray-500 mt-2 sm:mt-4 md:mt-5 font-bold uppercase tracking-widest leading-tight">
         {label[0]} <br /> {label[1]}
       </div>
     </div>

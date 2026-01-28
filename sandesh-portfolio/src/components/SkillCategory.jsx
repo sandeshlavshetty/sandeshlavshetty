@@ -6,9 +6,9 @@ export default function SkillCategory({ title, skills = [] }) {
       </h2>
 
       <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4">
-        {skills.map((skill, i) => (
+        {skills.map((skill) => (
           <span
-            key={i}
+            key={skill}
             className="
               px-3 sm:px-4 py-1.5 sm:py-2
               rounded-lg sm:rounded-xl

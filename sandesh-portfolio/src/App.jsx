@@ -22,7 +22,7 @@ function App() {
         {/* 🔥 Global Modal Portal */}
         <ModalPortal />
 
-      <div className="pt-6 sm:pt-8 lg:pt-16">
+      <div className="pt-14 sm:pt-16 lg:pt-24">
         <Routes>
           {/* Home */}
           <Route

@@ -12,13 +12,13 @@ export const thoughts = {
       link: "https://medium.com/@sandeshtlavshetty/llm-agent-architecture-and-frameworks-bd76a1ef162c",
     },
     {
-      id: "syntax-showdown",
-      title: "Syntax Showdown: PHP vs. JavaScript vs. Python",
+      id: "scalable-backend",
+      title: "Designing a Scalable Backend for 3,000+ Users",
       desc:
-        "Juggling PHP, JavaScript, and Python? 🤔This blog is your secret weapon! Learn how these languages handle variables, loops, and more, in a quick and easy-to-understand format. ",
-      date: "May 22, 2024",
-      read: "5 min read",
-      link: "https://medium.com/@sandeshtlavshetty/syntax-showdown-php-vs-javascript-vs-python-d7a9fab33991",
+        "What I Built, What Broke, and What I’d Do Differently Scaling isn’t about Kubernetes or fancy diagrams.It’s about discovering which assumptions you were wrong about — fast.",
+      date: "Jan 29, 2026",
+      read: "2 min read",
+      link: "https://medium.com/@sandeshtlavshetty/designing-a-scalable-backend-for-3-000-users-68392abcfe96",
     },
   ],
 };

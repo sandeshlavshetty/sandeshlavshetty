@@ -15,6 +15,17 @@ export default function ThoughtsSection() {
           <ThoughtCard key={post.id} {...post} />
         ))}
       </div>
+
+      <div className="mt-12 flex justify-center sm:justify-start">
+        <a
+          href="https://medium.com/@sandeshtlavshetty"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-3 bg-white text-[#1a1a1a] font-bold rounded-lg hover:bg-gray-200 transition-colors duration-300"
+        >
+          View All
+        </a>
+      </div>
     </section>
   );
 }

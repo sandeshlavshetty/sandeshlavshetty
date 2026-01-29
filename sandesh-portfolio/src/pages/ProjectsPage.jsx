@@ -48,7 +48,7 @@ export default function ProjectsPage() {
         <ProjectCategory
           id="ai-ml"
           title="AI & ML Projects"
-          items={[projects.najmai]}
+          items={[projects.najmai,projects.proj7,projects.proj8,projects.proj9]}
           onOpen={setActiveProject}
           onCopyLink={copyToClipboard}
           isCopied={copiedLink === "ai-ml"}
@@ -58,7 +58,7 @@ export default function ProjectsPage() {
         <ProjectCategory
           id="backend"
           title="Backend Engineering Projects"
-          items={[projects.bayt, projects.damas]}
+          items={[projects.bayt, projects.damas,projects.proj5]}
           onOpen={setActiveProject}
           onCopyLink={copyToClipboard}
           isCopied={copiedLink === "backend"}
@@ -68,7 +68,7 @@ export default function ProjectsPage() {
         <ProjectCategory
           id="systems"
           title="Systems Engineering Projects"
-          items={[projects.threatvision]}
+          items={[projects.threatvision,projects.proj6,projects.proj10]}
           onOpen={setActiveProject}
           onCopyLink={copyToClipboard}
           isCopied={copiedLink === "systems"}

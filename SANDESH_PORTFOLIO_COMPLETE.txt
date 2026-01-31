@@ -1,0 +1,900 @@
+================================================================================
+                    SANDESH LAVSHETTY - PORTFOLIO DATA
+                          COMPREHENSIVE OVERVIEW
+================================================================================
+
+================================================================================
+PROFESSIONAL SUMMARY
+================================================================================
+
+Backend & Platform Engineer | AI/ML Systems Developer | Full-Stack Builder
+
+Experienced software engineer with expertise in building production-grade backend 
+systems, AI-powered applications, and scalable APIs. Track record of leading 
+end-to-end development of institutional platforms serving 3,000+ users. Specialized 
+in microservices, API design, database architecture, and integrating LLM-driven 
+intelligent systems into real-world products.
+
+
+================================================================================
+PROFESSIONAL EXPERIENCE
+================================================================================
+
+1. INDIAN INSTITUTE OF INFORMATION TECHNOLOGY NAGPUR (IIITN)
+   Position: Software Developer Intern
+   Duration: Mar 2025 – May 2025
+   Location: Nagpur, India
+
+   PROJECT: IIIT Nagpur Official Website (iiitn.ac.in)
+
+   Role: Led end-to-end backend architecture and scalable API development for 
+         production systems serving 3,000+ users
+
+   Responsibilities:
+   • Led end-to-end in-house development of IIITN's official website, serving 
+     3,000+ active users across students, faculty, and administration
+   • Architected and implemented the complete backend using Python, Flask, and 
+     PostgreSQL, covering:
+     - REST API design and implementation
+     - Authentication and authorization systems
+     - Database schema design
+     - Significantly improved system reliability and efficiency
+   • Designed and managed server deployment, DevOps pipelines, and security 
+     configurations, achieving 99.9% uptime
+   • Improved overall usability and boosted student engagement by 45% within 
+     the first month of launch
+   • Directed and coordinated a team of frontend developers and content 
+     contributors, ensuring timely milestone delivery and alignment with 
+     institutional requirements
+   • Developed microservice-based HTTP services using FastAPI and Node.js, 
+     gaining hands-on experience with:
+     - Asynchronous programming
+     - Multithreading and synchronization
+     - Cloud computing
+     - Resulting in improved server performance
+
+   Tech Stack: 
+   - Backend: Python, Flask, FastAPI, Node.js
+   - Database: PostgreSQL
+   - DevOps: Docker, Nginx
+   - OS: Linux
+   - Architecture: REST APIs, Microservices
+
+   Live Website: https://iiitn.ac.in
+
+
+2. SMARTE INC.
+   Position: AI Intern – Testing Automation & AI Features
+   Duration: Mar 2024 – Dec 2024
+   Location: Remote
+
+   Contributions:
+   • Engineered and deployed AI/ML models for:
+     - Recommendation systems
+     - Prediction models
+     - Test automation
+     - Improved feature accuracy by 28%
+   • Designed and optimized data pipelines for:
+     - Data collection
+     - Extraction
+     - Preprocessing
+     - Reduced model training time by 35%
+   • Integrated LLMs into production workflows using:
+     - LangGraph
+     - OpenAI GPT models
+     - Enhanced recommendation relevance
+     - Reduced manual intervention by 40%
+
+   Tech Stack: 
+   - Python, LLMs, LangGraph, OpenAI GPT, Data Engineering, ML Optimization
+
+
+================================================================================
+PROJECT PORTFOLIO (10 MAJOR PROJECTS)
+================================================================================
+
+PROJECT 1: IIIT NAGPUR OFFICIAL WEBSITE (iiitn.ac.in)
+───────────────────────────────────────────────────────
+Status: Production · Internship Project · Live Platform
+
+Title: IIIT Nagpur Official Website (iiitn.ac.in)
+Subtitle: Production-grade backend system serving 3,000+ users
+Live Demo: https://iiitn.ac.in
+GitHub: https://github.com/sandeshlavshetty
+
+Tech Stack: 
+- Backend: Python, Flask, FastAPI, Node.js
+- Database: PostgreSQL
+- DevOps: Docker, Linux, Nginx
+- API Architecture: REST APIs
+
+Description & Impact:
+
+Led the end-to-end development of the official website for the Indian Institute 
+of Information Technology, Nagpur, serving 3,000+ students, faculty, and staff.
+
+What Was Built:
+• Architected and implemented the entire backend system using Flask and PostgreSQL, 
+  covering:
+  - API design
+  - Authentication and role-based access control
+  - Database schema design
+• Developed microservice-based HTTP applications using FastAPI and Node.js to 
+  handle scalable and asynchronous workloads
+• Designed and managed production-grade deployment, including:
+  - Server setup
+  - DevOps pipelines
+  - Security hardening
+  - Monitoring
+  - Achieved 99.9% uptime
+• Led and coordinated a team of frontend developers and content contributors, 
+  ensuring timely delivery aligned with institutional requirements
+
+Impact Metrics:
+• Improved overall system reliability and performance
+• Enabled smooth handling of concurrent users (3,000+)
+• Increased student engagement by 45% within the first month after launch
+• Delivered a maintainable, scalable platform used as the official digital 
+  presence of the institute
+
+
+PROJECT 2: INSPIRE - SMART CAMPUS COMMUTE PLATFORM
+──────────────────────────────────────────────────────
+Status: Production · Independent Project · 300+ Active Users
+
+Title: INSPIRE
+Subtitle: Community platform for IIITN students
+Live Demo: https://inspire-tech.netlify.app/
+GitHub: https://github.com/sandeshlavshetty/I.N.S.P.I.R.E
+
+Tech Stack:
+- Backend: Python, FastAPI, PostgreSQL
+- Frontend: React
+- AI Integration: LLM-based Code Assistant
+- DevOps: Docker, REST APIs
+- Architecture: Full-stack microservices
+
+Description & Impact:
+
+Built a campus-focused platform to solve bus travel and commute coordination 
+inefficiencies. Active user base of 300+ students, improving commute coordination 
+for approximately 20% of students from Dia Hostel.
+
+What Was Built:
+• Designed and developed a centralized commute management system enabling students 
+  to:
+  - Coordinate bus schedules
+  - Share route information
+  - Post real-time updates
+• Implemented a Project Sharing module allowing students to:
+  - Showcase technical projects
+  - Collaborate with peers
+  - Build portfolio
+• Built a Job & Opportunity Board for sharing:
+  - Internships
+  - Hackathons
+  - Campus-relevant opportunities
+• Integrated an AI-powered Code Assistant to help students:
+  - Debug code
+  - Generate code snippets
+  - Understand code explanations
+  - Access assistance directly within the platform
+• Developed secure REST APIs, user authentication, and role-based access control 
+  for scalable multi-user usage
+
+Impact Metrics:
+• Onboarded 300+ active users within the campus community
+• Improved bus commute coordination efficiency by ~20%
+• Reduced confusion and missed pickups
+• Created a multi-utility student platform combining logistics, collaboration, 
+  and AI assistance
+
+
+PROJECT 3: AI AUDITOR – MULTI-AGENT AUDITING SYSTEM (A-MAS)
+───────────────────────────────────────────────────────────
+Status: Hackathon Winner · Team Project · AI-Powered System
+
+Title: AI Auditor – Multi-Agent Auditing System (A-MAS)
+Subtitle: Hackathon-winning AI system for financial audits
+Live Demo: http://bob-hack.vercel.app/
+GitHub: https://github.com/Kashyap-Rishi/BOB_Hack
+Team: AI_Architects
+
+Tech Stack:
+- Core: Python, LangChain, LangGraph, FastAPI
+- AI/ML: Finetuned LLM, Vector Databases, RAG (Retrieval-Augmented Generation)
+- ML Models: XGBoost, CatBoost, LGBM (Ensemble Learning)
+- Database: Cosmos DB
+- Frontend: Vercel deployment
+
+Description & Impact:
+
+Built an AI-powered multi-agent auditing platform designed to streamline financial 
+audits, reduce manual documentation effort, and identify compliance risks with 
+explainable outputs.
+
+Problem Addressed:
+Traditional audits suffer from:
+• Manual document matching and form validation
+• Documentation chaos across multiple formats and languages
+• Increased audit risk due to human error and scale
+
+Solution Architecture:
+
+🥇 AI Auditor (A-MAS) - Multi-Agent System
+Implemented a hierarchical multi-agent architecture using LangGraph:
+
+1. Invoicer Agent
+   - Schedules invoice row processing
+   - Manages batch workflows
+
+2. Documenter Agent
+   - Extracts required fields from invoices
+   - Processes supporting documents (PDFs, images, SQL)
+   - Supports multilingual document processing
+
+3. Authorizer Agent
+   - Validates extracted data against auditing compliance rules
+   - Generates anomaly reports
+   - Creates final audit reports
+
+Key Features:
+• Generates approved parameters, anomaly reports, and final audit reports
+• Provides explainable AI outputs with document-level citations for each decision
+• Human-in-the-loop chat interface for:
+  - Reviewing anomalies
+  - Re-running audits with corrected inputs
+  - Interactive decision making
+
+🥈 Query Data Visualizer
+Built a natural-language-driven data visualization system that:
+• Converts user queries (e.g., "loan approvals vs repayments") into:
+  - Auto-generated SQL queries
+  - Dynamic charts (histograms, line plots, pie charts)
+• Uses RAG pipelines to retrieve relevant data
+• Generates visuals on demand
+• Supports further customization via chat-based prompts
+
+🥉 Audit Risk Recommender
+Developed a risk recommendation engine for bank branches that:
+• Analyzes transaction logs and historical audit reports
+• Uses ensemble ML models (XGBoost, CatBoost, LightGBM) with voting classifiers
+• Predicts audit preferences and potential risks
+• Supports proactive risk management
+
+Architecture Highlights:
+• Finetuned domain-specific LLM (B-LLM) for auditing context
+• Vector DB for contextual memory and retrieval
+• Stateless + context-window memory design for scalable inference
+• Secure data handling using Microsoft Presidio and opaque security layers
+
+Impact Metrics:
+• Hackathon Winner - Recognized for innovative AI approach
+• Reduced repetitive audit tasks through automation
+• Improved audit consistency and risk detection
+• Delivered an explainable, scalable AI system suitable for real-world financial 
+  auditing workflows
+
+
+PROJECT 4: ORDERBOOK – HIGH-PERFORMANCE MATCHING ENGINE
+────────────────────────────────────────────────────────
+Status: Systems Engineering · High-Performance Computing
+
+Title: OrderBook – High-Performance Matching Engine
+Subtitle: Low-latency C++ limit order book for HFT systems
+GitHub: https://github.com/timothewt/OrderBook.git
+
+Tech Stack:
+- Language: C++20
+- Data Structures: Red-Black Trees, Doubly Linked Lists
+- Architecture: Production-grade system design
+- Domain: High-Frequency Trading (HFT), Quantitative Finance
+
+Description & Impact:
+
+A production-grade Limit Order Book and Matching Engine built in C++20, designed 
+for low-latency and high-throughput trading environments.
+
+Key Features:
+• Achieves 600,000+ operations per second through:
+  - Optimized data structures
+  - Cache-efficient design
+  - SIMD optimizations
+
+• Implements Red-Black Trees (std::set) for:
+  - O(log n) price-level management
+  - Efficient order tracking
+
+• Uses doubly linked lists for:
+  - Fast order handling within each price level
+  - O(1) order deletion and modification
+
+• Supports core exchange operations:
+  - Order placement
+  - Order matching/execution
+  - Order cancellation/deletion
+
+• High-throughput processing:
+  - Handles large-scale workloads via CSV-driven input pipelines
+  - Deterministic output generation
+  - Reproducible results for testing
+
+• Comprehensive quality assurance:
+  - Unit test suite using Google Test
+  - Ensures correctness under high operation volume
+  - Performance benchmarking
+
+Architecture & Design:
+• Clean separation of concerns for maintainability
+• Production-ready for quantitative finance applications
+• Suitable for HFT system development
+• Demonstrates systems engineering best practices
+
+Impact & Use Case:
+Built to demonstrate:
+• Systems-level thinking and architecture
+• Performance optimization techniques
+• Real-world trading engine design
+• Low-latency system development
+• High-throughput data processing
+
+
+PROJECT 5: PORTFOLIO WEBSITE GENERATOR
+──────────────────────────────────────
+Status: Full-Stack Project · No-Code Platform
+
+Title: Portfolio Website Generator
+Subtitle: No-code platform to generate downloadable portfolio websites
+GitHub: https://github.com/sandeshlavshetty/portfolio_proj.git
+
+Tech Stack:
+- Backend: PHP, MySQL
+- Frontend: HTML5, CSS3, JavaScript
+- Server: Apache
+- Architecture: Full-stack no-code platform
+
+Description:
+
+Built a full-stack no-code portfolio builder that allows users to create, preview, 
+and download professional portfolio websites without writing any code.
+
+Key Features:
+• Secure authentication and session management using PHP and MySQL
+• Dynamic form-to-code pipeline that generates customized:
+  - HTML
+  - CSS
+  - JavaScript
+  - Based on user inputs
+• Multiple responsive templates with real-time preview support
+• One-click download of complete, production-ready portfolio website code
+• Focus on usability, validation, and scalability
+• Suitable for students and professionals
+
+Impact:
+• Democratized portfolio creation for non-technical users
+• Automated code generation from user inputs
+• Enabled users to quickly deploy professional websites
+
+
+PROJECT 6: INVENTORY MANAGEMENT SYSTEM
+───────────────────────────────────────
+Status: Educational Project · OOP Demonstration
+
+Title: Inventory Management System
+Subtitle: C++ OOP-based retail inventory and billing system
+GitHub: https://github.com/sandeshlavshetty/OOPS_PROJECT.git
+
+Tech Stack:
+- Language: C++ (OOP principles)
+- Data Storage: CSV file handling
+- Architecture: Console-based system
+
+Description:
+
+Built a console-based Inventory Management System in C++ using strong 
+Object-Oriented Programming principles to simulate real-world retail operations.
+
+Key Features:
+• Stock management capabilities:
+  - Add items to inventory
+  - Update existing items
+  - Delete items from stock
+  - View inventory details
+
+• Customer operations:
+  - Customer authentication
+  - Shopping cart management
+  - Billing system
+  - Invoice generation
+
+• Business analytics:
+  - Sales reports
+  - Profit/Loss analysis
+  - Stock level tracking
+  - Top-selling products identification
+
+• Architecture:
+  - Modular class design
+  - Object representation: Inventory, Users, Carts, Transactions
+  - Persistent storage using CSV files
+
+Impact:
+• Demonstrated strong OOP principles and design patterns
+• Simulated real-world retail operations
+• Showed data persistence and file handling expertise
+
+
+PROJECT 7: HYBRID SEARCH RAG SYSTEM
+───────────────────────────────────
+Status: NLP/AI Project · Production-Grade RAG
+
+Title: Hybrid Search RAG System
+Subtitle: LLM-powered document Q&A using vector + keyword retrieval
+GitHub: https://github.com/sandeshlavshetty/nlp_proj.git
+
+Tech Stack:
+- Core: Python, LangChain
+- Vector Search: FAISS (Facebook AI Similarity Search)
+- Keyword Search: BM25 (Best Match 25)
+- LLM Integration: Google Gemini API
+- UI: Streamlit
+- NLP Stack: RAG, Document Processing
+
+Description:
+
+Built a Retrieval-Augmented Generation (RAG) system that combines vector 
+similarity search with keyword-based retrieval to deliver accurate, 
+context-aware answers from large document collections.
+
+Key Features:
+• Hybrid search pipelines:
+  - Vector similarity search using FAISS
+  - Keyword-based retrieval using BM25
+  - Improved relevance over pure vector search
+
+• Document processing workflow:
+  - PDF ingestion
+  - Intelligent chunking
+  - Embedding generation
+  - Indexing for fast retrieval
+
+• AI-powered answer generation:
+  - Google Gemini API integration
+  - Context-grounded responses
+  - Source attribution for all answers
+
+• Interactive interface:
+  - Document upload capability
+  - Query interface
+  - Result visualization
+  - Chat-based interaction
+
+• Scalability:
+  - Indexed and queried 30+ research documents
+  - Persistent vector storage
+  - Efficient retrieval at scale
+
+Impact:
+• Demonstrated end-to-end RAG system design
+• Combined multiple retrieval strategies for improved accuracy
+• Showed proficiency in LLM integration and vector databases
+
+
+PROJECT 8: LOCAL MULTIMODAL RAG SYSTEM
+───────────────────────────────────────
+Status: Privacy-First Project · Offline-Capable System
+
+Title: Local Multimodal RAG System
+Subtitle: Privacy-first document intelligence using local LLMs
+GitHub: https://github.com/sandeshlavshetty/local_RAG.git
+
+Tech Stack:
+- Backend: FastAPI, Python
+- LLM Framework: Ollama (Local LLM Inference)
+- Vector DB: FAISS/Chroma
+- Frontend: Next.js, TypeScript, Tailwind CSS
+- AI Stack: RAG, LangChain, Multimodal Processing
+
+Description:
+
+Built a full-stack, privacy-preserving RAG platform for intelligent document 
+search and querying using local LLMs. Designed for secure environments including 
+government, enterprises, and offline systems.
+
+Key Features:
+• Multimodal RAG capabilities:
+  - PDF document processing
+  - Image/visual document understanding
+  - Audio document support
+
+• Local LLM integration:
+  - Ollama-based local inference
+  - Eliminates third-party API dependency
+  - Prevents data leaks and ensures privacy
+  - Offline-capable deployment
+
+• Scalable architecture:
+  - Embedding storage and retrieval
+  - Vector databases (FAISS/Chroma)
+  - Fast semantic search
+
+• Interactive chat interface:
+  - Real-time document-grounded responses
+  - Citation tracking
+  - Multi-turn conversations
+
+• Security & Privacy:
+  - No data sent to external APIs
+  - Suitable for sensitive environments
+  - Compliant with data privacy regulations
+  - Enterprise-ready
+
+Use Cases:
+• Government and military applications
+• Financial institutions with sensitive data
+• Healthcare and medical research
+• Corporate environments with confidentiality requirements
+• Offline/air-gapped systems
+
+Impact:
+• Demonstrated privacy-first AI architecture
+• Showed expertise in local LLM deployment
+• Created enterprise-grade RAG system
+
+
+PROJECT 9: SKIN LESION CLASSIFICATION USING DEEP LEARNING
+──────────────────────────────────────────────────────────
+Status: Research Project · Medical AI · Comparative Analysis
+
+Title: Skin Lesion Classification using Deep Learning
+Subtitle: Comparative study of CNN architectures on HAM10000 dataset
+GitHub: https://github.com/sandeshlavshetty/Skin-Cancer-Classification.git
+
+Tech Stack:
+- Deep Learning: PyTorch/TensorFlow
+- CNN Architectures: Custom CNN, Xception, MobileNet, ResNet, Ensemble Models
+- Computer Vision: Image processing, Grad-CAM
+- Dataset: HAM10000 (10,000+ dermatoscopic images, 7 classes)
+- Statistical Analysis: ROC-AUC, McNemar's testing
+
+Description:
+
+A research-driven deep learning project focused on automated skin lesion 
+classification using dermatoscopic images, aimed at improving early melanoma 
+detection and supporting clinical decision-making.
+
+Research Contributions:
+
+1. Comprehensive Comparative Analysis
+   • Evaluated multiple CNN architectures:
+     - Custom CNN (~1.2M parameters)
+     - Dual CNN
+     - Xception
+     - MobileNet
+     - ResNet
+     - Ensemble models
+   • Dataset: HAM10000 with 7 lesion classes and 10,000+ images
+
+2. Outstanding Performance on Compact Model
+   • Custom CNN (1.2M parameters) achieved:
+     - 98.1% test accuracy
+     - 0.98 macro F1-score
+     - Outperformed larger transfer-learning models
+   • Demonstrated that model size ≠ accuracy
+
+3. Novel Discovery: Resolution Effect
+   • Found counterintuitive result: 28×28 resolution images outperformed 
+     224×224 inputs by ~17% accuracy
+   • Key insight: Aggressive downsampling acts as strong implicit regularizer
+   • Mechanism: Low-resolution training mitigates overfitting to dataset-specific 
+     artifacts (hair, glare, ruler marks) and forces models to learn clinically 
+     relevant global features
+
+4. Rigorous Validation Methodology
+   • Class-weighted training to handle class imbalance
+   • Grad-CAM interpretability analysis
+   • ROC-AUC evaluation
+   • McNemar's statistical testing for significance
+   • External validation on ISIC datasets
+   • Ensemble strategy evaluation (Xception + EfficientNet)
+
+5. Generalization Studies
+   • Tested on external ISIC datasets
+   • Evaluated ensemble strategies
+   • Assessed robustness across different validation sets
+
+Key Findings:
+• Model capacity, input resolution, and dataset bias interact significantly
+• Resolution is a critical hyperparameter for medical imaging
+• Simpler models can outperform complex ones with proper regularization
+• Clinical relevance depends on learning global features over artifacts
+
+Impact & Applications:
+• Demonstrates research depth and experimental rigor
+• Shows statistical reasoning and methodology
+• Provides practical insights for healthcare AI deployment
+• Supports early melanoma detection systems
+• Informs best practices for medical imaging classification
+
+
+PROJECT 10: LEXICAL ANALYZER (SCANNER) FOR COMPILER FRONTEND
+─────────────────────────────────────────────────────────────
+Status: Systems Programming · Compiler Design
+
+Title: Lexical Analyzer (Scanner) for Compiler Frontend
+Subtitle: C-based lexer for tokenizing source code
+GitHub: https://github.com/sandeshlavshetty/lexicalanalyser.git
+
+Tech Stack:
+- Language: C (Systems Programming)
+- Architecture: Finite-state machine, Compiler theory
+- Output: Token streams
+
+Description:
+
+A Lexical Analyzer (Scanner) implemented in C, forming the first phase of a 
+compiler or interpreter pipeline. Demonstrates core compiler design principles 
+and low-level language processing.
+
+Key Features:
+• Lexical analysis process:
+  - Scans raw source code character-by-character
+  - Identifies valid lexical patterns
+  - Converts lexemes into structured tokens
+
+• Token classification:
+  - Keywords (if, while, for, etc.)
+  - Identifiers (variable names, function names)
+  - Operators (+, -, *, /, etc.)
+  - Literals (strings, numbers)
+  - Delimiters (parentheses, braces, semicolons)
+
+• Processing features:
+  - Ignores whitespace and comments
+  - Ensures clean token streams for downstream compiler stages
+  - Implements deterministic pattern matching logic
+
+• Output:
+  - Structured token streams suitable for syntax analysis (parsing)
+  - Clear separation between tokenization and parsing phases
+
+Educational Value:
+• Reinforces core compiler design principles
+• Demonstrates lexical rules and finite-state behavior
+• Shows practical error handling in systems programming
+• Foundation for building parsers and interpreters
+
+Impact:
+Built to demonstrate strong foundations in:
+• Systems programming and low-level implementation
+• Compiler construction and theory
+• Language processing and tokenization
+• Finite-state machine design
+
+
+================================================================================
+SERVICES OFFERED / SPECIALIZATIONS
+================================================================================
+
+1. BACKEND SYSTEMS & API ENGINEERING
+   ────────────────────────────────────
+
+   Who This Is For:
+   Recruiters looking for Backend / Platform / API Engineers
+
+   Overview:
+   Backend & Platform Engineer who builds scalable APIs, reliable systems, and 
+   AI-powered services used by thousands of users.
+
+   Experience Highlights:
+   • Led the end-to-end backend development of a production-grade institutional 
+     platform serving 3,000+ users
+   • Own API design, authentication, database architecture, DevOps, and security 
+     from the ground up
+   • Specialized tech stack: Python, FastAPI, Flask, Node.js, PostgreSQL
+   • Strong focus on microservice-based architectures, asynchronous systems, 
+     concurrency, and cloud deployments
+   • Integrate LLM-driven systems into real-world products
+   • Design agentic workflows, recommendation engines, and automation pipelines
+   • Reduce manual effort and enhance system intelligence
+
+   Core Competencies:
+   • System reliability and clean abstractions
+   • Performance optimization
+   • Production-ready backend systems
+   • Scalable API design
+   • Database architecture and optimization
+   • DevOps and infrastructure
+   • Security hardening
+   • Microservices and distributed systems
+
+
+2. AI, ML & GEN-AI APPLICATIONS
+   ────────────────────────────────
+
+   Who This Is For:
+   Recruiters hiring AI / ML / Gen-AI Engineers
+
+   Overview:
+   AI / ML Engineer focused on building production-ready intelligent systems, 
+   from classical machine learning models to LLM-powered agentic applications.
+
+   Experience Highlights:
+   • Designed and deployed AI/ML models for recommendation, prediction, and 
+     automation
+   • Improved feature accuracy by 28% and reduced manual intervention across 
+     real-world workflows
+   • Built end-to-end ML pipelines (data collection, preprocessing, training, 
+     evaluation, deployment)
+   • Optimized training workflows to reduce model training time by 35%
+   • Actively work with LLMs and agentic systems
+   • Integrate models using LangChain, LangGraph, vector databases, OpenAI GPT models
+   • Build recommendation engines, automation pipelines, and AI-driven features
+
+   Core Competencies:
+   • Model reliability and system performance
+   • Real-world impact and deployment
+   • Production-grade AI systems
+   • LLM integration and agentic systems
+   • Data pipeline optimization
+   • Vector databases and RAG systems
+   • Model training and evaluation
+   • AI feature development
+
+
+================================================================================
+TECHNICAL SKILLS & EXPERTISE
+================================================================================
+
+Programming Languages:
+- Python (Expert)
+- C++ (Advanced)
+- C (Advanced)
+- JavaScript/TypeScript (Advanced)
+- PHP (Intermediate)
+- SQL (Expert)
+
+Backend Frameworks & Libraries:
+- FastAPI (Expert)
+- Flask (Expert)
+- Node.js (Advanced)
+- Express.js (Intermediate)
+- LangChain (Advanced)
+- LangGraph (Advanced)
+
+Frontend Frameworks:
+- React.js (Advanced)
+- Next.js (Intermediate)
+- Tailwind CSS (Advanced)
+- Streamlit (Intermediate)
+
+Databases & Storage:
+- PostgreSQL (Expert)
+- MySQL (Advanced)
+- Vector Databases (FAISS, Chroma)
+- Cosmos DB (Intermediate)
+
+DevOps & Infrastructure:
+- Docker (Advanced)
+- Linux (Advanced)
+- Nginx (Advanced)
+- Git/GitHub (Expert)
+
+AI/ML Technologies:
+- LLMs & Generative AI (Advanced)
+- RAG Systems (Advanced)
+- Vector Embeddings (Advanced)
+- XGBoost, CatBoost, LightGBM (Advanced)
+- Deep Learning (PyTorch, TensorFlow) (Advanced)
+- Computer Vision (Advanced)
+- NLP (Advanced)
+
+APIs & Integrations:
+- REST API Design (Expert)
+- OpenAI GPT Integration (Advanced)
+- Google Gemini Integration (Advanced)
+- LLM Fine-tuning (Intermediate)
+
+Architectural Patterns:
+- Microservices (Advanced)
+- Asynchronous Programming (Advanced)
+- Multi-agent Systems (Advanced)
+- Scalable System Design (Advanced)
+- Security & Authentication (Advanced)
+
+Research & Analysis:
+- Statistical Testing (Advanced)
+- Experimental Design (Advanced)
+- Data Analysis & Visualization (Advanced)
+- Comparative Analysis (Advanced)
+
+
+================================================================================
+ADDITIONAL ACHIEVEMENTS & CERTIFICATIONS
+================================================================================
+
+🏆 AWARDS & RECOGNITION
+───────────────────────
+
+1. Winner, SIH 2025 Internal Hackathon
+   • Secured 1st rank to represent Indian Institute of Information Technology 
+     Nagpur at the national level
+   • Outperformed peers in a pool of 1.42 lakh+ (142,000+) internal participants 
+     nationwide
+   • Recognized for innovative solution and technical excellence
+
+2. Level 4 Open-Source Contributor - Hacktoberfest Holopin
+   • Achieved Level 4 status in Hacktoberfest
+   • Demonstrated consistent open-source contribution
+   • Collaborative development experience
+
+3. Google Solution Challenge '24 Regional Finalist
+   • Participated in Google Solution Challenge 2024
+   • Advanced to regional finalist stage
+   • Showcased innovation in solving real-world problems
+
+4. Club Co-Lead, GDG IIITN (Aug 2024 - Jan 2025)
+   • Directed 6+ technical events
+   • Engaged 500+ participants in community tech events
+   • Secured 15,000 INR sponsorship for events
+   • Increased community engagement by 30%
+   • Built and maintained active tech community
+
+
+📜 CERTIFICATIONS
+──────────────────
+
+1. Fundamentals of Accelerated Computing with CUDA C/C++
+   • Issued by: NVIDIA
+   • Date: October 2024
+   • Focus: GPU-accelerated computing and parallel programming
+   • Demonstrates expertise in CUDA and high-performance computing
+
+
+================================================================================
+THOUGHT LEADERSHIP & PUBLICATIONS
+================================================================================
+
+Medium Blog: https://medium.com/@sandeshtlavshetty
+
+1. "LLM Agent Architecture and Frameworks"
+   Published: August 11, 2025
+   Read Time: 11 minutes
+   Link: https://medium.com/@sandeshtlavshetty/llm-agent-architecture-and-frameworks-bd76a1ef162c
+   
+   Topic: Modern agentic systems using LLMs as reasoning engines with pre-defined 
+   function toolkits. Exploration of LangChain and LangGraph frameworks for 
+   building intelligent, autonomous systems.
+
+
+2. "Designing a Scalable Backend for 3,000+ Users"
+   Published: January 29, 2026
+   Read Time: 2 minutes
+   Link: https://medium.com/@sandeshtlavshetty/designing-a-scalable-backend-for-3-000-users-68392abcfe96
+   
+   Topic: Real-world scaling challenges and solutions. Insights from building 
+   IIITN official website. Discussion of what was built, what broke, and lessons 
+   learned for future scalable systems.
+   
+   Key Insight: "Scaling isn't about Kubernetes or fancy diagrams. It's about 
+   discovering which assumptions you were wrong about — fast."
+
+
+================================================================================
+LINKS & RESOURCES
+================================================================================
+
+Portfolio Website: https://inspire-tech.netlify.app/
+GitHub Profile: https://github.com/sandeshlavshetty
+Medium Blog: https://medium.com/@sandeshtlavshetty
+Resume/CV: Available upon request
+
+Primary Projects:
+• IIITN Official Website: https://iiitn.ac.in
+• INSPIRE Platform: https://inspire-tech.netlify.app/
+• AI Auditor: http://bob-hack.vercel.app/
+
+
+================================================================================
+END OF PORTFOLIO DATA
+================================================================================

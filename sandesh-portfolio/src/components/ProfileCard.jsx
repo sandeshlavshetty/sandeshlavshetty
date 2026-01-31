@@ -32,7 +32,7 @@ export default function ProfileCard() {
 
         {/* Subtitle - Exact Framer Specs: 18px, Medium, 110% Line Height */}
         <p className="mt-6 sm:mt-8 text-center text-sm sm:text-[18px] font-medium text-neutral-500 leading-[1.1] max-w-[200px] sm:max-w-[220px]">
-          Backend & Ai Engineer building scalable system
+          Software Engineer (Backend & AI)
         </p>
 
         <div className="flex-1" />

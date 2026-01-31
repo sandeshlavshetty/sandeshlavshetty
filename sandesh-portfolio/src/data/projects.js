@@ -13,7 +13,7 @@ export const projects = {
   damas: {
     id: "damas",
     title: "IIIT Nagpur Official Website (iiitn.ac.in)",
-    subtitle: "Production-grade backend system serving 3000+ users",
+    subtitle: "Production-grade backend system serving 3000+ daily users, owned end-to-end",
     image: proj1,
     demo: "https://iiitn.ac.in",
     github: "https://github.com/sandeshlavshetty",
@@ -67,7 +67,7 @@ Built a campus-focused platform to solve **bus travel and commute coordination i
   najmai: {
     id: "najmai",
     title: "AI Auditor – Multi-Agent Auditing System (A-MAS)",
-    subtitle: "Hackathon-winning AI system for financial audits",
+    subtitle: "Hackathon-winning multi-agent AI system for financial audits and model evaluation",
     image: proj3,
     youtube: "",
     demo: "http://bob-hack.vercel.app/",
@@ -130,7 +130,7 @@ Designed a **Multi-Agent Auditing System (A-MAS)** that automates document verif
   threatvision: {
     id: "threatvision",
     title: "OrderBook – High-Performance Matching Engine",
-    subtitle: "Low-latency C++ limit order book for HFT systems",
+    subtitle: "Low-latency C++ matching engine exploring HFT-style system design",
     image: proj4,
     demo: "https://github.com/timothewt/OrderBook.git",
     github: "https://github.com/timothewt/OrderBook.git",

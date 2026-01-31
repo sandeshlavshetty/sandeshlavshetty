@@ -19,15 +19,14 @@ export default function HeroText() {
 
       {/* Description - Slightly larger text with better line height */}
       <p className="mt-8 text-[19px] text-gray-400 max-w-2xl leading-relaxed">
-        Software Engineer specializing in backend architecture and applied AI,
-        with a focus on performance, scalability, and real-world deployment.
+        Focused on scalable systems, performance-critical backends, and real-world AI deployments.
       </p>
 
       {/* Stats Section - Much larger impact numbers */}
       <div className="flex flex-row sm:flex-row flex-wrap sm:flex-nowrap sm:gap-8 md:gap-12 lg:gap-20 mt-8 sm:mt-12 md:mt-16 pt-8 sm:pt-10 md:pt-12">
-        <Stat number="+1" label={["YEARS OF", "EXPERIENCE"]} />
-        <Stat number="+10" label={["PROJECTS", "COMPLETED"]} />
         <Stat number="+3000" label={["ACTIVE", "USERS"]} />
+        <Stat number="+10" label={["PRODUCTION &", "RESEARCH PROJECTS"]} />
+        <Stat number="+1" label={["YEARS INDUSTRY", "EXPERIENCE"]} />
       </div>
     </div>
     </Reveal>

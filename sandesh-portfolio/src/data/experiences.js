@@ -5,7 +5,7 @@ export const experiences = [
     role: "Software Developer Intern",
     duration: "Mar 2025 – May 2025",
     short:
-      "Led backend architecture and scalable API development for production systems.",
+      "Led backend architecture and scalable API development for production systems used across the institute",
     details: `
 ### Responsibilities
 - Led the end-to-end in-house development of IIITN’s official website, serving **3,000+ active users** across students, faculty, and administration.
@@ -30,7 +30,7 @@ export const experiences = [
     role: "AI Intern– Testing Automation & AI Features",
     duration: "Mar 2024 – Dec 2024",
     short:
-      "Worked on product engineering and cross-team feature development.",
+      "Worked on product engineering, backend services, and cross-team feature delivery",
     details: `
 ### Contributions
 - Engineered and deployed **AI/ML models** for recommendation, prediction, and test automation, improving feature accuracy by **28%**.

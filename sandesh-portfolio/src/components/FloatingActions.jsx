@@ -25,7 +25,8 @@ export default function FloatingActions() {
         "
       >
         <Youtube size={18} />
-        <span className="text-sm font-medium">Got 2 minutes?</span>
+        <span className="text-sm font-medium hidden sm:inline">Got 2 minutes?</span>
+        <span className="text-sm font-medium sm:hidden">2 Min?</span>
       </button>
 
       {/* Right — Resume */}

@@ -7,6 +7,7 @@ export function ModalProvider({ children }) {
     experience: null,
     project: null,
     service: null,
+    video: false,
   });
 
   const openModal = useCallback((type, data) => {
@@ -28,6 +29,7 @@ export function ModalProvider({ children }) {
       experience: null,
       project: null,
       service: null,
+      video: false,
     });
   }, []);
 

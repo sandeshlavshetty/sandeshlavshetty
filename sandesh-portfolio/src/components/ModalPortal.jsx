@@ -2,6 +2,7 @@ import { useModal } from "../context/ModalContext";
 import ExperienceModal from "./ExperienceModal";
 import ProjectModal from "./ProjectModal";
 import ServiceModal from "./ServiceModal";
+import VideoModal from "./VideoModal";
 
 export default function ModalPortal() {
   const { modals, closeModal } = useModal();
@@ -25,6 +26,9 @@ export default function ModalPortal() {
           service={modals.service}
           onClose={() => closeModal("service")}
         />
+      )}
+      {modals.video && (
+        <VideoModal onClose={() => closeModal("video")} />
       )}
     </>
   );

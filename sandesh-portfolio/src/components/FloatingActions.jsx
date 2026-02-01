@@ -1,13 +1,20 @@
 import { Youtube, FileUser } from "lucide-react";
+import { useModal } from "../context/ModalContext";
 import resumePdf from "../assets/portfolio.pdf";
 
 export default function FloatingActions() {
+  const { openModal } = useModal();
+
+  const handleIntroClick = (e) => {
+    e.preventDefault();
+    openModal("video", true);
+  };
+
   return (
     <>
       {/* Left — Intro Video */}
-      <a
-        href="https://youtu.be/oOaaK6PG4Jc"
-        target="_blank"
+      <button
+        onClick={handleIntroClick}
         className="
           fixed bottom-20 lg:bottom-6 left-6 z-50
           flex items-center gap-2
@@ -18,8 +25,8 @@ export default function FloatingActions() {
         "
       >
         <Youtube size={18} />
-        <span className="text-sm font-medium">Intro</span>
-      </a>
+        <span className="text-sm font-medium">Got 2 minutes?</span>
+      </button>
 
       {/* Right — Resume */}
       <a

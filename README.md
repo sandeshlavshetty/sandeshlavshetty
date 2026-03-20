@@ -31,7 +31,7 @@ Production backend platform for 3,000+ users.
 
 - Tech: Python, Flask, FastAPI, PostgreSQL, Docker, Nginx
 - Built authentication, REST APIs, schema design, and deployment pipeline
-- Achieved 99.9% uptime and improved engagement by 45%
+- Achieved 98.7% uptime and improved engagement by 45%
 - Live: https://iiitn.ac.in
 
 ### 2) INSPIRE - Smart Campus Commute Platform

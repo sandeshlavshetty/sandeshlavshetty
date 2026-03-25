@@ -31,6 +31,16 @@ export default function ProjectsSection() {
           />
 
         <ProjectRow
+          {...projects.proj11}
+          onClick={() => openModal("project", projects.proj11)}
+          />
+        
+        <ProjectRow
+          {...projects.bayt}
+          onClick={() => openModal("project", projects.bayt)}
+          />
+
+        <ProjectRow
           {...projects.threatvision}
           onClick={() => openModal("project", projects.threatvision)}
           />

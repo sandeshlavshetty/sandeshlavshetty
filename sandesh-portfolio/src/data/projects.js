@@ -8,6 +8,7 @@ import proj7 from "../assets/proj7.png";
 import proj8 from "../assets/proj8.png";
 import proj9 from "../assets/proj9.png";
 import proj10 from "../assets/proj10.png";
+import proj11 from "../assets/proj11.png";
 
 export const projects = {
   damas: {
@@ -263,6 +264,24 @@ A **Lexical Analyzer (Scanner)** implemented in **C**, forming the first phase o
 - Designed to reinforce core **compiler design principles**, including lexical rules, finite-state behavior, and error handling.
 
 Built to demonstrate strong foundations in **systems programming, compiler construction, and low-level language processing**.
+  `,
+},
+
+  proj11: {
+  id: "proj11",
+  title: "AI Reach Project",
+  subtitle: "Full-stack AI outreach CRM with automation and RBAC",
+  image: proj11, // replace with proj11 image variable when available
+  demo: "https://ai-outreach-green.vercel.app/",
+  github: "https://ai-outreach-green.vercel.app/",
+  description: `
+Built a **full-stack AI outreach CRM** using **React + TypeScript (Vite)** and **FastAPI with MongoDB**, covering lead lifecycle management, company tracking, templates, and pipeline workflows.
+
+- Implemented automated email operations with **Gmail OAuth**, including scheduled sends, multi-step follow-up sequencing, and per-lead/per-company follow-up customization.
+- Developed intelligent **reply-detection logic** (thread/message-reference based) to auto-update lead states (**sent/responded/archived**), reducing manual tracking effort.
+- Added **role-based access control** (viewer/contributor/admin), access-request approval flow, and admin role management to support secure multi-user collaboration.
+
+Built to demonstrate strong backend architecture, workflow automation, and secure collaboration at scale.
   `,
 },
 

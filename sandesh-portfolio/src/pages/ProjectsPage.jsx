@@ -41,6 +41,7 @@ export default function ProjectsPage() {
           <ProjectRow {...projects.damas} onClick={() => setActiveProject(projects.damas)} />
           <ProjectRow {...projects.bayt} onClick={() => setActiveProject(projects.bayt)} />
           <ProjectRow {...projects.najmai} onClick={() => setActiveProject(projects.najmai)} />
+          <ProjectRow {...projects.proj11} onClick={() => setActiveProject(projects.proj11)} />
           <ProjectRow {...projects.threatvision} onClick={() => setActiveProject(projects.threatvision)} />
         </div>
 
@@ -48,7 +49,7 @@ export default function ProjectsPage() {
         <ProjectCategory
           id="ai-ml"
           title="AI & ML Projects"
-          items={[projects.najmai,projects.proj7,projects.proj8,projects.proj9]}
+          items={[projects.najmai,projects.proj11,projects.proj7,projects.proj8,projects.proj9]}
           onOpen={setActiveProject}
           onCopyLink={copyToClipboard}
           isCopied={copiedLink === "ai-ml"}
@@ -57,8 +58,8 @@ export default function ProjectsPage() {
         {/* Backend */}
         <ProjectCategory
           id="backend"
-          title="Backend Engineering Projects"
-          items={[projects.bayt, projects.damas,projects.proj5]}
+          title="Backend/Full-Stack Engineering Projects"
+          items={[projects.proj11,projects.bayt,projects.damas,projects.proj5]}
           onOpen={setActiveProject}
           onCopyLink={copyToClipboard}
           isCopied={copiedLink === "backend"}

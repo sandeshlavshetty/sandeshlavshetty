@@ -1,21 +1,12 @@
 import Reveal from "./Reveal";
+import AnimatedRole from "./AnimatedRole";
+
 export default function HeroText() {
   return (
      <Reveal y={0} duration={900}>
     <div className="flex flex-col justify-center max-w-4xl mb-16">
-      {/* Big Heading - Increased size and weight */}
-      <h1
-        className="
-  text-[56px] sm:text-[72px] lg:text-[110px]
-  font-black leading-[0.9]
-  text-white tracking-tighter
-"
-      >
-        SOFTWARE
-        <span className="block text-[#1a1a1a] dark:text-white/10">
-          ENGINEER
-        </span>
-      </h1>
+      {/* Animated Role Heading */}
+      <AnimatedRole />
 
       {/* Description - Slightly larger text with better line height */}
       <p className="mt-8 text-[19px] text-gray-400 max-w-2xl leading-relaxed">

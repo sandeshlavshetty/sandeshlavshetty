@@ -1,5 +1,27 @@
-export const experiences = [
-  {
+﻿export const experiences = [
+    {
+    id: "CoinDCX",
+    company: "CoinDCX",
+    role: "Quant Intern",
+    duration: "June 2026 - Present",
+    logoUrl: "https://www.google.com/s2/favicons?domain=coindcx.com&sz=128",
+    logoAlt: "CoinDCX logo",
+    short:
+      "Working on circuit breaker logic and bot uptime debugging for live trading infrastructure",
+    details: `
+### Contributions
+- Working on circuit breaker logic and bot uptime debugging for live trading infrastructure, improving reliability of automated trading systems built with **Python and Django**.
+- Building a forecasting and monitoring agent for **USDT/INR pair rebalancing**, tracking liquidity signals in the futures market to support trading decisions.
+- Collaborating with senior Quants to translate research ideas into practical monitoring tools for trading bot behavior and strategy health.
+
+### Tech Stack
+- Python
+- Django
+- Trading Infrastructure
+- Quantitative Analysis
+    `,
+  },
+   {
     id: "IIITN",
     company: "Indian Institute of Information Technology",
     role: "Software Developer Intern",

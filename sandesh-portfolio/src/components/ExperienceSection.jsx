@@ -19,6 +19,8 @@ export default function ExperienceSection() {
             company={exp.company}
             desc={exp.short}
             date={exp.duration}
+            logoUrl={exp.logoUrl}
+            logoAlt={exp.logoAlt}
             onClick={() => openModal("experience", exp)}
           />
         ))}

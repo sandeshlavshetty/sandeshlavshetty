@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { X } from "lucide-react";
 import ReactMarkdown from "react-markdown";
+import CompanyLogo from "./CompanyLogo";
 
 export default function ExperienceModal({ experience, onClose }) {
   const modalRef = useRef(null);
@@ -49,17 +50,28 @@ export default function ExperienceModal({ experience, onClose }) {
 
         {/* Header Section with padding */}
         <div className="p-5 sm:p-8 pb-4 sm:pb-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white pr-8 mb-2 sm:mb-3">
-            {experience.company}
-          </h2>
+          <div className="flex items-start gap-4 sm:gap-5 pr-8">
+            <CompanyLogo
+              name={experience.company}
+              logoUrl={experience.logoUrl}
+              alt={experience.logoAlt}
+              size="lg"
+            />
 
-          <p className="text-gray-400 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
-            {experience.role}
-          </p>
+            <div className="min-w-0">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 sm:mb-3">
+                {experience.company}
+              </h2>
 
-          <p className="text-xs sm:text-sm md:text-base text-gray-500">
-            {experience.duration}
-          </p>
+              <p className="text-gray-400 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
+                {experience.role}
+              </p>
+
+              <p className="text-xs sm:text-sm md:text-base text-gray-500">
+                {experience.duration}
+              </p>
+            </div>
+          </div>
 
           <div className="border-t border-white/10 mt-6" />
         </div>

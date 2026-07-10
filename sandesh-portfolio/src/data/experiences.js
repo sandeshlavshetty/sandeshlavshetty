@@ -4,6 +4,8 @@ export const experiences = [
     company: "Indian Institute of Information Technology",
     role: "Software Developer Intern",
     duration: "Mar 2025 – May 2025",
+    logoUrl: "https://www.google.com/s2/favicons?domain=iiitn.ac.in&sz=128",
+    logoAlt: "IIIT Nagpur logo",
     short:
       "Led backend architecture and scalable API development for production systems used across the institute",
     details: `
@@ -29,6 +31,8 @@ export const experiences = [
     company: "Smarte Inc.",
     role: "AI Intern– Testing Automation & AI Features",
     duration: "Mar 2024 – Dec 2024",
+    logoUrl: "https://www.google.com/s2/favicons?domain=smarteinc.com&sz=128",
+    logoAlt: "Smarte Inc. logo",
     short:
       "Worked on product engineering, backend services, and cross-team feature delivery",
     details: `
